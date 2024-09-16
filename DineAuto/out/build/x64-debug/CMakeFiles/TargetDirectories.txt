@@ -1,0 +1,3 @@
+C:/Users/Kella/OneDrive/Documents/2024-2025 school year/fall 2024/CS 322/DineAuto/322DineAutoProject/DineAuto/out/build/x64-debug/CMakeFiles/DineAuto.dir
+C:/Users/Kella/OneDrive/Documents/2024-2025 school year/fall 2024/CS 322/DineAuto/322DineAutoProject/DineAuto/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/Kella/OneDrive/Documents/2024-2025 school year/fall 2024/CS 322/DineAuto/322DineAutoProject/DineAuto/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
