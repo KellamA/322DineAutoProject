@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+orderDataBase.o: orderDataBase.cpp.o
+.PHONY : orderDataBase.o
+
+# target to build an object file
+orderDataBase.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o
+.PHONY : orderDataBase.cpp.o
+
+orderDataBase.i: orderDataBase.cpp.i
+.PHONY : orderDataBase.i
+
+# target to preprocess a source file
+orderDataBase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.i
+.PHONY : orderDataBase.cpp.i
+
+orderDataBase.s: orderDataBase.cpp.s
+.PHONY : orderDataBase.s
+
+# target to generate assembly for a file
+orderDataBase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.s
+.PHONY : orderDataBase.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... orderDataBase.o"
+	@echo "... orderDataBase.i"
+	@echo "... orderDataBase.s"
 .PHONY : help
 
 
