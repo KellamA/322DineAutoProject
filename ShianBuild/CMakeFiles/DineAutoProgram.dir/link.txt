@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/DineAutoProgram.dir/main.cpp.o -o DineAutoProgram 
