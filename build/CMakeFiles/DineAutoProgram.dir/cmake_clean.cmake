@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DineAutoProgram.dir/main.cpp.o"
   "CMakeFiles/DineAutoProgram.dir/main.cpp.o.d"
+  "CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o"
+  "CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o.d"
   "DineAutoProgram"
   "DineAutoProgram.pdb"
 )
