@@ -63,9 +63,23 @@ int main() {
 
     // END
     
+    // shoppingCart tests
     menuItem newItem(123456, "Bob", 2);
     shoppingCart cart;
     cart.addToCart(newItem);
+
+    menuItem frenchFries;
+    frenchFries.setItemID(22222);
+    frenchFries.setItemName("French fries");
+    frenchFries.setItemQuantity(5);
+
+    cart.addToCart(frenchFries);
+
+    cout << endl << "Cart before removal:" << endl;
+    cart.displayCart();
+
+    cout << endl << "Cart after removal:" << endl;
+    cart.removeFromCart("Bob");
     cart.displayCart();
 
     return 0;

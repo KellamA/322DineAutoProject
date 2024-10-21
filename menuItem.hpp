@@ -7,13 +7,19 @@ class menuItem
 {
 public:
     menuItem(int newItemID, string newItemName, int newItemQuantity);
+    menuItem();
 
     int getItemID() const;
     string getItemName() const;
     int getItemQuantity() const;
 
+    void setItemID(int newItemID);
+    void setItemName(string newItemName);
+    void setItemQuantity(int newItemQuantity);
+
+
 private:
-    int ItemID;
-    string ItemName;
-    int ItemQuantity;
+    int itemID;
+    string itemName;
+    int itemQuantity;
 };
