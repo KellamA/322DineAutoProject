@@ -1,21 +1,19 @@
 #include <iostream>
 #include <string>
-#include <vector>
 
 using namespace std;
 
 class menuItem
 {
 public:
-    menuItem(int itemID, string itemName, int itemQuantity);
-    ~menuItem();
+    menuItem(int newItemID, string newItemName, int newItemQuantity);
 
-    int getItemID();
-    string getItemName();
-    int getItemQuantity();
+    int getItemID() const;
+    string getItemName() const;
+    int getItemQuantity() const;
 
 private:
-    int itemId;
-    string itemName;
-    int itemQuantity;
+    int ItemID;
+    string ItemName;
+    int ItemQuantity;
 };

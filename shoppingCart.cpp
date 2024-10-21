@@ -1,6 +1,15 @@
 #include "shoppingCart.hpp"
 
-void shoppingCart::addToCart(const menuItem &item)
+void shoppingCart::addToCart(const menuItem &newItem)
 {
-    cart.push_back(item);
+    this->cart.push_back(newItem);
+}
+
+void shoppingCart::displayCart()
+{
+    for (const auto& item : cart)
+    {
+        cout << "itemID: " << item.getItemID() << " itemName: " << item.getItemName() << " itemQuantity: " << item.getItemQuantity() << endl;
+    }
+    
 }

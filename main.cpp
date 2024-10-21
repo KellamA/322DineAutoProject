@@ -2,7 +2,7 @@
 #include <vector>
 #include <tuple>    
 #include "orderDataBase.hpp"
-
+#include "shoppingCart.hpp"
 
 int main() {
     std::string fileName = "../orders.csv"; // Specify the name of the CSV file
@@ -12,7 +12,6 @@ int main() {
     std::string date;
     int numItems;
     std::string specialRequest;
-
 
  //Everyting between this and the comment marker "END" is test code for now and should be removed later
     // Manually enter order details
@@ -63,6 +62,11 @@ int main() {
     std::cout << "Order has been added to the database.\n";
 
     // END
+    
+    menuItem newItem(123456, "Bob", 2);
+    shoppingCart cart;
+    cart.addToCart(newItem);
+    cart.displayCart();
 
     return 0;
 
