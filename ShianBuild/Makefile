@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+menuItem.o: menuItem.cpp.o
+.PHONY : menuItem.o
+
+# target to build an object file
+menuItem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menuItem.cpp.o
+.PHONY : menuItem.cpp.o
+
+menuItem.i: menuItem.cpp.i
+.PHONY : menuItem.i
+
+# target to preprocess a source file
+menuItem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menuItem.cpp.i
+.PHONY : menuItem.cpp.i
+
+menuItem.s: menuItem.cpp.s
+.PHONY : menuItem.s
+
+# target to generate assembly for a file
+menuItem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menuItem.cpp.s
+.PHONY : menuItem.cpp.s
+
 orderDataBase.o: orderDataBase.cpp.o
 .PHONY : orderDataBase.o
 
@@ -177,6 +201,30 @@ orderDataBase.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.s
 .PHONY : orderDataBase.cpp.s
 
+shoppingCart.o: shoppingCart.cpp.o
+.PHONY : shoppingCart.o
+
+# target to build an object file
+shoppingCart.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o
+.PHONY : shoppingCart.cpp.o
+
+shoppingCart.i: shoppingCart.cpp.i
+.PHONY : shoppingCart.i
+
+# target to preprocess a source file
+shoppingCart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.i
+.PHONY : shoppingCart.cpp.i
+
+shoppingCart.s: shoppingCart.cpp.s
+.PHONY : shoppingCart.s
+
+# target to generate assembly for a file
+shoppingCart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.s
+.PHONY : shoppingCart.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +237,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... menuItem.o"
+	@echo "... menuItem.i"
+	@echo "... menuItem.s"
 	@echo "... orderDataBase.o"
 	@echo "... orderDataBase.i"
 	@echo "... orderDataBase.s"
+	@echo "... shoppingCart.o"
+	@echo "... shoppingCart.i"
+	@echo "... shoppingCart.s"
 .PHONY : help
 
 
