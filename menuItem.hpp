@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <tuple>
 
 using namespace std;
 
@@ -17,6 +18,7 @@ public:
     void setItemName(string newItemName);
     void setItemQuantity(int newItemQuantity);
 
+    tuple<int, string, int> convertToTuple();
 
 private:
     int itemID;

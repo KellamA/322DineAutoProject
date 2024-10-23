@@ -61,7 +61,6 @@ int main() {
 
     std::cout << "Order has been added to the database.\n";
 
-    orderDB.readOrders();
 
     // END
     
