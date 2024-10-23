@@ -6,14 +6,14 @@
 
 int main() {
     std::string fileName = "../orders.csv"; // Specify the name of the CSV file
+    // generic file name so it can find it on any of our computers
     OrderDatabase orderDB(fileName);
-
+//Everyting between this and the comment marker "END" is test code for now and should be removed later
     int orderNumber;
     std::string date;
     int numItems;
     std::string specialRequest;
 
- //Everyting between this and the comment marker "END" is test code for now and should be removed later
     // Manually enter order details
     std::cout << "Enter order number: ";
     std::cin >> orderNumber;
@@ -60,6 +60,8 @@ int main() {
     orderDB.addOrder(orderNumber, date, items, specialRequest);
 
     std::cout << "Order has been added to the database.\n";
+
+    orderDB.readOrders();
 
     // END
     
