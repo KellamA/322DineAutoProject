@@ -43,3 +43,9 @@ void menuItem::setItemQuantity(int newItemQuantity)
 {
     this->itemQuantity = newItemQuantity;
 }
+
+tuple<int, string, int> menuItem::convertToTuple()
+{
+    tuple<int, string, int> itemTuple = make_tuple(this->getItemID(), this->getItemName(), this->getItemQuantity());
+    return itemTuple;
+}

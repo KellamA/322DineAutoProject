@@ -82,6 +82,10 @@ int main() {
     cart.removeFromCart("Bob");
     cart.displayCart();
 
+    std::vector<std::tuple<int, std::string, int>> testVector;
+    testVector.push_back(frenchFries.convertToTuple());
+    orderDB.addOrder(12345678, "2024-10-22", testVector, "Nah");
+
     return 0;
 
 }
