@@ -7,7 +7,7 @@ public:
     void addToCart(const menuItem& newItem);
     void removeFromCart(const string& itemToRemove);
     void displayCart();
-    void addToCart(const tuple<int,string,int> newItem);
+    void addToCart(const tuple<int,string,int>& newItem);
 
 private:
     vector<menuItem> cart;
