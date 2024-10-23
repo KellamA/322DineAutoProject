@@ -1,8 +1,12 @@
+#ifndef MENUITEM_HPP
+#define MENUITEM_HPP
+
 #include <iostream>
 #include <string>
 #include <tuple>
 
 using namespace std;
+
 
 class menuItem
 {
@@ -25,3 +29,5 @@ private:
     string itemName;
     int itemQuantity;
 };
+
+#endif
