@@ -27,3 +27,8 @@ void shoppingCart::displayCart()
     }
     
 }
+
+void shoppingCart::addToCart(const tuple<int, string, int>& newItem)
+{
+    this->tupleCart.push_back(newItem);
+}
