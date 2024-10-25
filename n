@@ -1,0 +1,750 @@
+[1mdiff --git a/orders.csv b/orders.csv[m
+[1mindex 908421d..2bbb3bb 100644[m
+[1m--- a/orders.csv[m
+[1m+++ b/orders.csv[m
+[36m@@ -1 +1,2 @@[m
+ 1,2003-09-23,1,CheeseBurger,2,2,Soda,2,[m
+[32m+[m[32m4,2010-04-11,10,Fries,9,[m
+[1mdiff --git a/ryanBuild/CMakeFiles/DineAutoProgram.dir/DependInfo.cmake b/ryanBuild/CMakeFiles/DineAutoProgram.dir/DependInfo.cmake[m
+[1mindex 03ad949..53f3a70 100644[m
+[1m--- a/ryanBuild/CMakeFiles/DineAutoProgram.dir/DependInfo.cmake[m
+[1m+++ b/ryanBuild/CMakeFiles/DineAutoProgram.dir/DependInfo.cmake[m
+[36m@@ -9,6 +9,7 @@[m [mset(CMAKE_DEPENDS_LANGUAGES[m
+ # The set of dependency files which are needed:[m
+ set(CMAKE_DEPENDS_DEPENDENCY_FILES[m
+   "/home/iceman5703/322DineAutoProgram/322DineAutoProject/main.cpp" "CMakeFiles/DineAutoProgram.dir/main.cpp.o" "gcc" "CMakeFiles/DineAutoProgram.dir/main.cpp.o.d"[m
+[32m+[m[32m  "/home/iceman5703/322DineAutoProgram/322DineAutoProject/orderDataBase.cpp" "CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o" "gcc" "CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o.d"[m
+   )[m
+ [m
+ # Targets to which this target links.[m
+[1mdiff --git a/ryanBuild/CMakeFiles/DineAutoProgram.dir/build.make b/ryanBuild/CMakeFiles/DineAutoProgram.dir/build.make[m
+[1mindex be4a480..709fdf1 100644[m
+[1m--- a/ryanBuild/CMakeFiles/DineAutoProgram.dir/build.make[m
+[1m+++ b/ryanBuild/CMakeFiles/DineAutoProgram.dir/build.make[m
+[36m@@ -83,17 +83,33 @@[m [mCMakeFiles/DineAutoProgram.dir/main.cpp.s: cmake_force[m
+ 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DineAutoProgram.dir/main.cpp.s"[m
+ 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iceman5703/322DineAutoProgram/322DineAutoProject/main.cpp -o CMakeFiles/DineAutoProgram.dir/main.cpp.s[m
+ [m
+[32m+[m[32mCMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o: CMakeFiles/DineAutoProgram.dir/flags.make[m
+[32m+[m[32mCMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o: ../orderDataBase.cpp[m
+[32m+[m[32mCMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o: CMakeFiles/DineAutoProgram.dir/compiler_depend.ts[m
+[32m+[m	[32m@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iceman5703/322DineAutoProgram/322DineAutoProject/ryanBuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o"[m
+[32m+[m	[32m/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o -MF CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o.d -o CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o -c /home/iceman5703/322DineAutoProgram/322DineAutoProject/orderDataBase.cpp[m
+[32m+[m
+[32m+[m[32mCMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.i: cmake_force[m
+[32m+[m	[32m@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.i"[m
+[32m+[m	[32m/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iceman5703/322DineAutoProgram/322DineAutoProject/orderDataBase.cpp > CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.i[m
+[32m+[m
+[32m+[m[32mCMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.s: cmake_force[m
+[32m+[m	[32m@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.s"[m
+[32m+[m	[32m/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iceman5703/322DineAutoProgram/322DineAutoProject/orderDataBase.cpp -o CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.s[m
+[32m+[m
+ # Object files for target DineAutoProgram[m
+ DineAutoProgram_OBJECTS = \[m
+[31m-"CMakeFiles/DineAutoProgram.dir/main.cpp.o"[m
+[32m+[m[32m"CMakeFiles/DineAutoProgram.dir/main.cpp.o" \[m
+[32m+[m[32m"CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o"[m
+ [m
+ # External object files for target DineAutoProgram[m
+ DineAutoProgram_EXTERNAL_OBJECTS =[m
+ [m
+ DineAutoProgram: CMakeFiles/DineAutoProgram.dir/main.cpp.o[m
+[32m+[m[32mDineAutoProgram: CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o[m
+ DineAutoProgram: CMakeFiles/DineAutoProgram.dir/build.make[m
+ DineAutoProgram: CMakeFiles/DineAutoProgram.dir/link.txt[m
+[31m-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/iceman5703/322DineAutoProgram/322DineAutoProject/ryanBuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable DineAutoProgram"[m
+[32m+[m	[32m@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/iceman5703/322DineAutoProgram/322DineAutoProject/ryanBuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable DineAutoProgram"[m
+ 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DineAutoProgram.dir/link.txt --verbose=$(VERBOSE)[m
+ [m
+ # Rule to build all files generated by this target.[m
+[1mdiff --git a/ryanBuild/CMakeFiles/DineAutoProgram.dir/cmake_clean.cmake b/ryanBuild/CMakeFiles/DineAutoProgram.dir/cmake_clean.cmake[m
+[1mindex ff60c0f..faf4480 100644[m
+[1m--- a/ryanBuild/CMakeFiles/DineAutoProgram.dir/cmake_clean.cmake[m
+[1m+++ b/ryanBuild/CMakeFiles/DineAutoProgram.dir/cmake_clean.cmake[m
+[36m@@ -1,6 +1,8 @@[m
+ file(REMOVE_RECURSE[m
+   "CMakeFiles/DineAutoProgram.dir/main.cpp.o"[m
+   "CMakeFiles/DineAutoProgram.dir/main.cpp.o.d"[m
+[32m+[m[32m  "CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o"[m
+[32m+[m[32m  "CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o.d"[m
+   "DineAutoProgram"[m
+   "DineAutoProgram.pdb"[m
+ )[m
+[1mdiff --git a/ryanBuild/CMakeFiles/DineAutoProgram.dir/compiler_depend.internal b/ryanBuild/CMakeFiles/DineAutoProgram.dir/compiler_depend.internal[m
+[1mindex 02f07a5..966946f 100644[m
+[1m--- a/ryanBuild/CMakeFiles/DineAutoProgram.dir/compiler_depend.internal[m
+[1m+++ b/ryanBuild/CMakeFiles/DineAutoProgram.dir/compiler_depend.internal[m
+[36m@@ -182,4 +182,226 @@[m [mCMakeFiles/DineAutoProgram.dir/main.cpp.o[m
+  /usr/include/c++/11/bits/ostream.tcc[m
+  /usr/include/c++/11/istream[m
+  /usr/include/c++/11/bits/istream.tcc[m
+[32m+[m[32m /home/iceman5703/322DineAutoProgram/322DineAutoProject/orderDataBase.hpp[m
+[32m+[m[32m /usr/include/c++/11/fstream[m
+[32m+[m[32m /usr/include/c++/11/bits/codecvt.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h[m
+[32m+[m[32m /usr/include/c++/11/bits/fstream.tcc[m
+[32m+[m[32m /usr/include/c++/11/vector[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_uninitialized.h[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_vector.h[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_bvector.h[m
+[32m+[m[32m /usr/include/c++/11/bits/vector.tcc[m
+[32m+[m[32m /usr/include/c++/11/ctime[m
+[32m+[m[32m /usr/include/c++/11/sstream[m
+[32m+[m[32m /usr/include/c++/11/bits/sstream.tcc[m
+[32m+[m[32m /usr/include/c++/11/tuple[m
+[32m+[m[32m /usr/include/c++/11/utility[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_relops.h[m
+[32m+[m[32m /usr/include/c++/11/array[m
+[32m+[m[32m /usr/include/c++/11/bits/uses_allocator.h[m
+[32m+[m[32m /usr/include/c++/11/bits/invoke.h[m
+[32m+[m
+[32m+[m[32mCMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o[m
+[32m+[m[32m /home/iceman5703/322DineAutoProgram/322DineAutoProject/orderDataBase.cpp[m
+[32m+[m[32m /usr/include/stdc-predef.h[m
+[32m+[m[32m /home/iceman5703/322DineAutoProgram/322DineAutoProject/orderDataBase.hpp[m
+[32m+[m[32m /usr/include/c++/11/iostream[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h[m
+[32m+[m[32m /usr/include/features.h[m
+[32m+[m[32m /usr/include/features-time64.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/wordsize.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/timesize.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/sys/cdefs.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/long-double.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/gnu/stubs.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/gnu/stubs-64.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h[m
+[32m+[m[32m /usr/include/c++/11/pstl/pstl_config.h[m
+[32m+[m[32m /usr/include/c++/11/ostream[m
+[32m+[m[32m /usr/include/c++/11/ios[m
+[32m+[m[32m /usr/include/c++/11/iosfwd[m
+[32m+[m[32m /usr/include/c++/11/bits/stringfwd.h[m
+[32m+[m[32m /usr/include/c++/11/bits/memoryfwd.h[m
+[32m+[m[32m /usr/include/c++/11/bits/postypes.h[m
+[32m+[m[32m /usr/include/c++/11/cwchar[m
+[32m+[m[32m /usr/include/wchar.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/libc-header-start.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/floatn.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/floatn-common.h[m
+[32m+[m[32m /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h[m
+[32m+[m[32m /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/wchar.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/wint_t.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/__FILE.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/FILE.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/locale_t.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h[m
+[32m+[m[32m /usr/include/c++/11/exception[m
+[32m+[m[32m /usr/include/c++/11/bits/exception.h[m
+[32m+[m[32m /usr/include/c++/11/bits/exception_ptr.h[m
+[32m+[m[32m /usr/include/c++/11/bits/exception_defines.h[m
+[32m+[m[32m /usr/include/c++/11/bits/cxxabi_init_exception.h[m
+[32m+[m[32m /usr/include/c++/11/typeinfo[m
+[32m+[m[32m /usr/include/c++/11/bits/hash_bytes.h[m
+[32m+[m[32m /usr/include/c++/11/new[m
+[32m+[m[32m /usr/include/c++/11/bits/move.h[m
+[32m+[m[32m /usr/include/c++/11/type_traits[m
+[32m+[m[32m /usr/include/c++/11/bits/nested_exception.h[m
+[32m+[m[32m /usr/include/c++/11/bits/char_traits.h[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_algobase.h[m
+[32m+[m[32m /usr/include/c++/11/bits/functexcept.h[m
+[32m+[m[32m /usr/include/c++/11/bits/cpp_type_traits.h[m
+[32m+[m[32m /usr/include/c++/11/ext/type_traits.h[m
+[32m+[m[32m /usr/include/c++/11/ext/numeric_traits.h[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_pair.h[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_iterator_base_types.h[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_iterator_base_funcs.h[m
+[32m+[m[32m /usr/include/c++/11/bits/concept_check.h[m
+[32m+[m[32m /usr/include/c++/11/debug/assertions.h[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_iterator.h[m
+[32m+[m[32m /usr/include/c++/11/bits/ptr_traits.h[m
+[32m+[m[32m /usr/include/c++/11/debug/debug.h[m
+[32m+[m[32m /usr/include/c++/11/bits/predefined_ops.h[m
+[32m+[m[32m /usr/include/c++/11/cstdint[m
+[32m+[m[32m /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h[m
+[32m+[m[32m /usr/include/stdint.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/typesizes.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/time64.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/stdint-intn.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h[m
+[32m+[m[32m /usr/include/c++/11/bits/localefwd.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h[m
+[32m+[m[32m /usr/include/c++/11/clocale[m
+[32m+[m[32m /usr/include/locale.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/locale.h[m
+[32m+[m[32m /usr/include/c++/11/cctype[m
+[32m+[m[32m /usr/include/ctype.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/endian.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/endianness.h[m
+[32m+[m[32m /usr/include/c++/11/bits/ios_base.h[m
+[32m+[m[32m /usr/include/c++/11/ext/atomicity.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h[m
+[32m+[m[32m /usr/include/pthread.h[m
+[32m+[m[32m /usr/include/sched.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/time_t.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/sched.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/cpu-set.h[m
+[32m+[m[32m /usr/include/time.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/time.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/timex.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/clock_t.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/timer_t.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/struct_mutex.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/setjmp.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/sys/single_threaded.h[m
+[32m+[m[32m /usr/include/c++/11/bits/locale_classes.h[m
+[32m+[m[32m /usr/include/c++/11/string[m
+[32m+[m[32m /usr/include/c++/11/bits/allocator.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h[m
+[32m+[m[32m /usr/include/c++/11/ext/new_allocator.h[m
+[32m+[m[32m /usr/include/c++/11/bits/ostream_insert.h[m
+[32m+[m[32m /usr/include/c++/11/bits/cxxabi_forced.h[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_function.h[m
+[32m+[m[32m /usr/include/c++/11/backward/binders.h[m
+[32m+[m[32m /usr/include/c++/11/bits/range_access.h[m
+[32m+[m[32m /usr/include/c++/11/initializer_list[m
+[32m+[m[32m /usr/include/c++/11/bits/basic_string.h[m
+[32m+[m[32m /usr/include/c++/11/ext/alloc_traits.h[m
+[32m+[m[32m /usr/include/c++/11/bits/alloc_traits.h[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_construct.h[m
+[32m+[m[32m /usr/include/c++/11/string_view[m
+[32m+[m[32m /usr/include/c++/11/bits/functional_hash.h[m
+[32m+[m[32m /usr/include/c++/11/bits/string_view.tcc[m
+[32m+[m[32m /usr/include/c++/11/ext/string_conversions.h[m
+[32m+[m[32m /usr/include/c++/11/cstdlib[m
+[32m+[m[32m /usr/include/stdlib.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/waitflags.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/waitstatus.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/sys/types.h[m
+[32m+[m[32m /usr/include/endian.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/byteswap.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/uintn-identity.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/sys/select.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/select.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h[m
+[32m+[m[32m /usr/include/alloca.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/stdlib-float.h[m
+[32m+[m[32m /usr/include/c++/11/bits/std_abs.h[m
+[32m+[m[32m /usr/include/c++/11/cstdio[m
+[32m+[m[32m /usr/include/stdio.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/stdio_lim.h[m
+[32m+[m[32m /usr/include/c++/11/cerrno[m
+[32m+[m[32m /usr/include/errno.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/errno.h[m
+[32m+[m[32m /usr/include/linux/errno.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/asm/errno.h[m
+[32m+[m[32m /usr/include/asm-generic/errno.h[m
+[32m+[m[32m /usr/include/asm-generic/errno-base.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/types/error_t.h[m
+[32m+[m[32m /usr/include/c++/11/bits/charconv.h[m
+[32m+[m[32m /usr/include/c++/11/bits/basic_string.tcc[m
+[32m+[m[32m /usr/include/c++/11/bits/locale_classes.tcc[m
+[32m+[m[32m /usr/include/c++/11/system_error[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h[m
+[32m+[m[32m /usr/include/c++/11/stdexcept[m
+[32m+[m[32m /usr/include/c++/11/streambuf[m
+[32m+[m[32m /usr/include/c++/11/bits/streambuf.tcc[m
+[32m+[m[32m /usr/include/c++/11/bits/basic_ios.h[m
+[32m+[m[32m /usr/include/c++/11/bits/locale_facets.h[m
+[32m+[m[32m /usr/include/c++/11/cwctype[m
+[32m+[m[32m /usr/include/wctype.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h[m
+[32m+[m[32m /usr/include/c++/11/bits/streambuf_iterator.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h[m
+[32m+[m[32m /usr/include/c++/11/bits/locale_facets.tcc[m
+[32m+[m[32m /usr/include/c++/11/bits/basic_ios.tcc[m
+[32m+[m[32m /usr/include/c++/11/bits/ostream.tcc[m
+[32m+[m[32m /usr/include/c++/11/istream[m
+[32m+[m[32m /usr/include/c++/11/bits/istream.tcc[m
+[32m+[m[32m /usr/include/c++/11/fstream[m
+[32m+[m[32m /usr/include/c++/11/bits/codecvt.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h[m
+[32m+[m[32m /usr/include/c++/11/bits/fstream.tcc[m
+[32m+[m[32m /usr/include/c++/11/vector[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_uninitialized.h[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_vector.h[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_bvector.h[m
+[32m+[m[32m /usr/include/c++/11/bits/vector.tcc[m
+[32m+[m[32m /usr/include/c++/11/ctime[m
+[32m+[m[32m /usr/include/c++/11/sstream[m
+[32m+[m[32m /usr/include/c++/11/bits/sstream.tcc[m
+[32m+[m[32m /usr/include/c++/11/tuple[m
+[32m+[m[32m /usr/include/c++/11/utility[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_relops.h[m
+[32m+[m[32m /usr/include/c++/11/array[m
+[32m+[m[32m /usr/include/c++/11/bits/uses_allocator.h[m
+[32m+[m[32m /usr/include/c++/11/bits/invoke.h[m
+ [m
+[1mdiff --git a/ryanBuild/CMakeFiles/DineAutoProgram.dir/compiler_depend.make b/ryanBuild/CMakeFiles/DineAutoProgram.dir/compiler_depend.make[m
+[1mindex f419bdd..5ba27a9 100644[m
+[1m--- a/ryanBuild/CMakeFiles/DineAutoProgram.dir/compiler_depend.make[m
+[1m+++ b/ryanBuild/CMakeFiles/DineAutoProgram.dir/compiler_depend.make[m
+[36m@@ -180,8 +180,253 @@[m [mCMakeFiles/DineAutoProgram.dir/main.cpp.o: ../main.cpp \[m
+   /usr/include/c++/11/bits/basic_ios.tcc \[m
+   /usr/include/c++/11/bits/ostream.tcc \[m
+   /usr/include/c++/11/istream \[m
+[31m-  /usr/include/c++/11/bits/istream.tcc[m
+[32m+[m[32m  /usr/include/c++/11/bits/istream.tcc \[m
+[32m+[m[32m  ../orderDataBase.hpp \[m
+[32m+[m[32m  /usr/include/c++/11/fstream \[m
+[32m+[m[32m  /usr/include/c++/11/bits/codecvt.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/fstream.tcc \[m
+[32m+[m[32m  /usr/include/c++/11/vector \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_uninitialized.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_vector.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_bvector.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/vector.tcc \[m
+[32m+[m[32m  /usr/include/c++/11/ctime \[m
+[32m+[m[32m  /usr/include/c++/11/sstream \[m
+[32m+[m[32m  /usr/include/c++/11/bits/sstream.tcc \[m
+[32m+[m[32m  /usr/include/c++/11/tuple \[m
+[32m+[m[32m  /usr/include/c++/11/utility \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_relops.h \[m
+[32m+[m[32m  /usr/include/c++/11/array \[m
+[32m+[m[32m  /usr/include/c++/11/bits/uses_allocator.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/invoke.h[m
+[32m+[m
+[32m+[m[32mCMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o: ../orderDataBase.cpp \[m
+[32m+[m[32m  /usr/include/stdc-predef.h \[m
+[32m+[m[32m  ../orderDataBase.hpp \[m
+[32m+[m[32m  /usr/include/c++/11/iostream \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \[m
+[32m+[m[32m  /usr/include/features.h \[m
+[32m+[m[32m  /usr/include/features-time64.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/wordsize.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/timesize.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/sys/cdefs.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/long-double.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/gnu/stubs.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \[m
+[32m+[m[32m  /usr/include/c++/11/pstl/pstl_config.h \[m
+[32m+[m[32m  /usr/include/c++/11/ostream \[m
+[32m+[m[32m  /usr/include/c++/11/ios \[m
+[32m+[m[32m  /usr/include/c++/11/iosfwd \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stringfwd.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/memoryfwd.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/postypes.h \[m
+[32m+[m[32m  /usr/include/c++/11/cwchar \[m
+[32m+[m[32m  /usr/include/wchar.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/floatn.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \[m
+[32m+[m[32m  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \[m
+[32m+[m[32m  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/wchar.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \[m
+[32m+[m[32m  /usr/include/c++/11/exception \[m
+[32m+[m[32m  /usr/include/c++/11/bits/exception.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/exception_ptr.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/exception_defines.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/cxxabi_init_exception.h \[m
+[32m+[m[32m  /usr/include/c++/11/typeinfo \[m
+[32m+[m[32m  /usr/include/c++/11/bits/hash_bytes.h \[m
+[32m+[m[32m  /usr/include/c++/11/new \[m
+[32m+[m[32m  /usr/include/c++/11/bits/move.h \[m
+[32m+[m[32m  /usr/include/c++/11/type_traits \[m
+[32m+[m[32m  /usr/include/c++/11/bits/nested_exception.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/char_traits.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_algobase.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/functexcept.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/cpp_type_traits.h \[m
+[32m+[m[32m  /usr/include/c++/11/ext/type_traits.h \[m
+[32m+[m[32m  /usr/include/c++/11/ext/numeric_traits.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_pair.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_iterator_base_types.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/concept_check.h \[m
+[32m+[m[32m  /usr/include/c++/11/debug/assertions.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_iterator.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/ptr_traits.h \[m
+[32m+[m[32m  /usr/include/c++/11/debug/debug.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/predefined_ops.h \[m
+[32m+[m[32m  /usr/include/c++/11/cstdint \[m
+[32m+[m[32m  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \[m
+[32m+[m[32m  /usr/include/stdint.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/typesizes.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/time64.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/localefwd.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \[m
+[32m+[m[32m  /usr/include/c++/11/clocale \[m
+[32m+[m[32m  /usr/include/locale.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/locale.h \[m
+[32m+[m[32m  /usr/include/c++/11/cctype \[m
+[32m+[m[32m  /usr/include/ctype.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/endian.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/endianness.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/ios_base.h \[m
+[32m+[m[32m  /usr/include/c++/11/ext/atomicity.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \[m
+[32m+[m[32m  /usr/include/pthread.h \[m
+[32m+[m[32m  /usr/include/sched.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/sched.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \[m
+[32m+[m[32m  /usr/include/time.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/time.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/timex.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/setjmp.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/locale_classes.h \[m
+[32m+[m[32m  /usr/include/c++/11/string \[m
+[32m+[m[32m  /usr/include/c++/11/bits/allocator.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \[m
+[32m+[m[32m  /usr/include/c++/11/ext/new_allocator.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/ostream_insert.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/cxxabi_forced.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_function.h \[m
+[32m+[m[32m  /usr/include/c++/11/backward/binders.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/range_access.h \[m
+[32m+[m[32m  /usr/include/c++/11/initializer_list \[m
+[32m+[m[32m  /usr/include/c++/11/bits/basic_string.h \[m
+[32m+[m[32m  /usr/include/c++/11/ext/alloc_traits.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/alloc_traits.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_construct.h \[m
+[32m+[m[32m  /usr/include/c++/11/string_view \[m
+[32m+[m[32m  /usr/include/c++/11/bits/functional_hash.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/string_view.tcc \[m
+[32m+[m[32m  /usr/include/c++/11/ext/string_conversions.h \[m
+[32m+[m[32m  /usr/include/c++/11/cstdlib \[m
+[32m+[m[32m  /usr/include/stdlib.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/waitflags.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/sys/types.h \[m
+[32m+[m[32m  /usr/include/endian.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/byteswap.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/sys/select.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/select.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \[m
+[32m+[m[32m  /usr/include/alloca.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/std_abs.h \[m
+[32m+[m[32m  /usr/include/c++/11/cstdio \[m
+[32m+[m[32m  /usr/include/stdio.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \[m
+[32m+[m[32m  /usr/include/c++/11/cerrno \[m
+[32m+[m[32m  /usr/include/errno.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/errno.h \[m
+[32m+[m[32m  /usr/include/linux/errno.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/asm/errno.h \[m
+[32m+[m[32m  /usr/include/asm-generic/errno.h \[m
+[32m+[m[32m  /usr/include/asm-generic/errno-base.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/charconv.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/basic_string.tcc \[m
+[32m+[m[32m  /usr/include/c++/11/bits/locale_classes.tcc \[m
+[32m+[m[32m  /usr/include/c++/11/system_error \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \[m
+[32m+[m[32m  /usr/include/c++/11/stdexcept \[m
+[32m+[m[32m  /usr/include/c++/11/streambuf \[m
+[32m+[m[32m  /usr/include/c++/11/bits/streambuf.tcc \[m
+[32m+[m[32m  /usr/include/c++/11/bits/basic_ios.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/locale_facets.h \[m
+[32m+[m[32m  /usr/include/c++/11/cwctype \[m
+[32m+[m[32m  /usr/include/wctype.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/streambuf_iterator.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/locale_facets.tcc \[m
+[32m+[m[32m  /usr/include/c++/11/bits/basic_ios.tcc \[m
+[32m+[m[32m  /usr/include/c++/11/bits/ostream.tcc \[m
+[32m+[m[32m  /usr/include/c++/11/istream \[m
+[32m+[m[32m  /usr/include/c++/11/bits/istream.tcc \[m
+[32m+[m[32m  /usr/include/c++/11/fstream \[m
+[32m+[m[32m  /usr/include/c++/11/bits/codecvt.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \[m
+[32m+[m[32m  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/fstream.tcc \[m
+[32m+[m[32m  /usr/include/c++/11/vector \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_uninitialized.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_vector.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_bvector.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/vector.tcc \[m
+[32m+[m[32m  /usr/include/c++/11/ctime \[m
+[32m+[m[32m  /usr/include/c++/11/sstream \[m
+[32m+[m[32m  /usr/include/c++/11/bits/sstream.tcc \[m
+[32m+[m[32m  /usr/include/c++/11/tuple \[m
+[32m+[m[32m  /usr/include/c++/11/utility \[m
+[32m+[m[32m  /usr/include/c++/11/bits/stl_relops.h \[m
+[32m+[m[32m  /usr/include/c++/11/array \[m
+[32m+[m[32m  /usr/include/c++/11/bits/uses_allocator.h \[m
+[32m+[m[32m  /usr/include/c++/11/bits/invoke.h[m
+[32m+[m
+[32m+[m
+[32m+[m[32m../orderDataBase.cpp:[m
+[32m+[m
+[32m+[m[32m/usr/include/c++/11/bits/uses_allocator.h:[m
+[32m+[m
+[32m+[m[32m/usr/include/c++/11/array:[m
+[32m+[m
+[32m+[m[32m/usr/include/c++/11/bits/stl_relops.h:[m
+[32m+[m
+[32m+[m[32m/usr/include/c++/11/sstream:[m
+[32m+[m
+[32m+[m[32m/usr/include/c++/11/bits/vector.tcc:[m
+[32m+[m
+[32m+[m[32m/usr/include/c++/11/bits/stl_bvector.h:[m
+[32m+[m
+[32m+[m[32m/usr/include/c++/11/bits/stl_uninitialized.h:[m
+ [m
+[32m+[m[32m/usr/include/c++/11/vector:[m
+[32m+[m
+[32m+[m[32m/usr/include/c++/11/bits/fstream.tcc:[m
+[32m+[m
+[32m+[m[32m/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:[m
+[32m+[m
+[32m+[m[32m/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:[m
+ [m
+ /usr/include/c++/11/bits/istream.tcc:[m
+ [m
+[36m@@ -207,6 +452,8 @@[m [mCMakeFiles/DineAutoProgram.dir/main.cpp.o: ../main.cpp \[m
+ [m
+ /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:[m
+ [m
+[32m+[m[32m/usr/include/c++/11/bits/stl_vector.h:[m
+[32m+[m
+ /usr/include/c++/11/system_error:[m
+ [m
+ /usr/include/c++/11/bits/locale_classes.tcc:[m
+[36m@@ -225,6 +472,8 @@[m [mCMakeFiles/DineAutoProgram.dir/main.cpp.o: ../main.cpp \[m
+ [m
+ /usr/include/x86_64-linux-gnu/bits/errno.h:[m
+ [m
+[32m+[m[32m/usr/include/c++/11/utility:[m
+[32m+[m
+ /usr/include/errno.h:[m
+ [m
+ /usr/include/c++/11/cerrno:[m
+[36m@@ -379,6 +628,10 @@[m [mCMakeFiles/DineAutoProgram.dir/main.cpp.o: ../main.cpp \[m
+ [m
+ /usr/include/c++/11/iosfwd:[m
+ [m
+[32m+[m[32m/usr/include/c++/11/ctime:[m
+[32m+[m
+[32m+[m[32m/usr/include/c++/11/bits/codecvt.h:[m
+[32m+[m
+ /usr/include/x86_64-linux-gnu/bits/time64.h:[m
+ [m
+ /usr/include/c++/11/bits/string_view.tcc:[m
+[36m@@ -401,10 +654,14 @@[m [mCMakeFiles/DineAutoProgram.dir/main.cpp.o: ../main.cpp \[m
+ [m
+ /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:[m
+ [m
+[32m+[m[32m../orderDataBase.hpp:[m
+[32m+[m
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h:[m
+ [m
+ /usr/include/c++/11/bits/postypes.h:[m
+ [m
+[32m+[m[32m/usr/include/c++/11/bits/invoke.h:[m
+[32m+[m
+ /usr/include/x86_64-linux-gnu/bits/timex.h:[m
+ [m
+ /usr/include/c++/11/exception:[m
+[36m@@ -419,6 +676,8 @@[m [mCMakeFiles/DineAutoProgram.dir/main.cpp.o: ../main.cpp \[m
+ [m
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:[m
+ [m
+[32m+[m[32m/usr/include/c++/11/tuple:[m
+[32m+[m
+ /usr/include/c++/11/type_traits:[m
+ [m
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h:[m
+[36m@@ -513,6 +772,8 @@[m [mCMakeFiles/DineAutoProgram.dir/main.cpp.o: ../main.cpp \[m
+ [m
+ /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:[m
+ [m
+[32m+[m[32m/usr/include/c++/11/bits/sstream.tcc:[m
+[32m+[m
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:[m
+ [m
+ /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:[m
+[36m@@ -537,6 +798,8 @@[m [mCMakeFiles/DineAutoProgram.dir/main.cpp.o: ../main.cpp \[m
+ [m
+ /usr/include/c++/11/bits/basic_string.h:[m
+ [m
+[32m+[m[32m/usr/include/c++/11/fstream:[m
+[32m+[m
+ /usr/include/c++/11/bits/cxxabi_forced.h:[m
+ [m
+ /usr/include/c++/11/ext/alloc_traits.h:[m
+[1mdiff --git a/ryanBuild/CMakeFiles/DineAutoProgram.dir/link.txt b/ryanBuild/CMakeFiles/DineAutoProgram.dir/link.txt[m
+[1mindex 2a7c49b..ac762d8 100644[m
+[1m--- a/ryanBuild/CMakeFiles/DineAutoProgram.dir/link.txt[m
+[1m+++ b/ryanBuild/CMakeFiles/DineAutoProgram.dir/link.txt[m
+[36m@@ -1 +1 @@[m
+[31m-/usr/bin/c++ CMakeFiles/DineAutoProgram.dir/main.cpp.o -o DineAutoProgram [m
+[32m+[m[32m/usr/bin/c++ CMakeFiles/DineAutoProgram.dir/main.cpp.o CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o -o DineAutoProgram[m[41m [m
+[1mdiff --git a/ryanBuild/CMakeFiles/DineAutoProgram.dir/main.cpp.o b/ryanBuild/CMakeFiles/DineAutoProgram.dir/main.cpp.o[m
+[1mindex b7ddfa9..a9d099f 100644[m
+Binary files a/ryanBuild/CMakeFiles/DineAutoProgram.dir/main.cpp.o and b/ryanBuild/CMakeFiles/DineAutoProgram.dir/main.cpp.o differ
+[1mdiff --git a/ryanBuild/CMakeFiles/DineAutoProgram.dir/main.cpp.o.d b/ryanBuild/CMakeFiles/DineAutoProgram.dir/main.cpp.o.d[m
+[1mindex 5c9f15a..549f1b6 100644[m
+[1m--- a/ryanBuild/CMakeFiles/DineAutoProgram.dir/main.cpp.o.d[m
+[1m+++ b/ryanBuild/CMakeFiles/DineAutoProgram.dir/main.cpp.o.d[m
+[36m@@ -145,4 +145,18 @@[m [mCMakeFiles/DineAutoProgram.dir/main.cpp.o: \[m
+  /usr/include/c++/11/bits/locale_facets.tcc \[m
+  /usr/include/c++/11/bits/basic_ios.tcc \[m
+  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \[m
+[31m- /usr/include/c++/11/bits/istream.tcc[m
+[32m+[m[32m /usr/include/c++/11/bits/istream.tcc \[m
+[32m+[m[32m /home/iceman5703/322DineAutoProgram/322DineAutoProject/orderDataBase.hpp \[m
+[32m+[m[32m /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \[m
+[32m+[m[32m /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \[m
+[32m+[m[32m /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/vector \[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_uninitialized.h \[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_vector.h \[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_bvector.h \[m
+[32m+[m[32m /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/ctime \[m
+[32m+[m[32m /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \[m
+[32m+[m[32m /usr/include/c++/11/tuple /usr/include/c++/11/utility \[m
+[32m+[m[32m /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/array \[m
+[32m+[m[32m /usr/include/c++/11/bits/uses_allocator.h \[m
+[32m+[m[32m /usr/include/c++/11/bits/invoke.h[m
+[1mdiff --git a/ryanBuild/CMakeFiles/DineAutoProgram.dir/progress.make b/ryanBuild/CMakeFiles/DineAutoProgram.dir/progress.make[m
+[1mindex abadeb0..6a9dc74 100644[m
+[1m--- a/ryanBuild/CMakeFiles/DineAutoProgram.dir/progress.make[m
+[1m+++ b/ryanBuild/CMakeFiles/DineAutoProgram.dir/progress.make[m
+[36m@@ -1,3 +1,4 @@[m
+ CMAKE_PROGRESS_1 = 1[m
+ CMAKE_PROGRESS_2 = 2[m
+[32m+[m[32mCMAKE_PROGRESS_3 = 3[m
+ [m
+[1mdiff --git a/ryanBuild/CMakeFiles/Makefile2 b/ryanBuild/CMakeFiles/Makefile2[m
+[1mindex 2a0eb58..cdbcd8d 100644[m
+[1m--- a/ryanBuild/CMakeFiles/Makefile2[m
+[1m+++ b/ryanBuild/CMakeFiles/Makefile2[m
+[36m@@ -81,12 +81,12 @@[m [mclean: CMakeFiles/DineAutoProgram.dir/clean[m
+ CMakeFiles/DineAutoProgram.dir/all:[m
+ 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/depend[m
+ 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/build[m
+[31m-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iceman5703/322DineAutoProgram/322DineAutoProject/ryanBuild/CMakeFiles --progress-num=1,2 "Built target DineAutoProgram"[m
+[32m+[m	[32m@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iceman5703/322DineAutoProgram/322DineAutoProject/ryanBuild/CMakeFiles --progress-num=1,2,3 "Built target DineAutoProgram"[m
+ .PHONY : CMakeFiles/DineAutoProgram.dir/all[m
+ [m
+ # Build rule for subdir invocation for target.[m
+ CMakeFiles/DineAutoProgram.dir/rule: cmake_check_build_system[m
+[31m-	$(CMAKE_COMMAND) -E cmake_progress_start /home/iceman5703/322DineAutoProgram/322DineAutoProject/ryanBuild/CMakeFiles 2[m
+[32m+[m	[32m$(CMAKE_COMMAND) -E cmake_progress_start /home/iceman5703/322DineAutoProgram/322DineAutoProject/ryanBuild/CMakeFiles 3[m
+ 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DineAutoProgram.dir/all[m
+ 	$(CMAKE_COMMAND) -E cmake_progress_start /home/iceman5703/322DineAutoProgram/322DineAutoProject/ryanBuild/CMakeFiles 0[m
+ .PHONY : CMakeFiles/DineAutoProgram.dir/rule[m
+[1mdiff --git a/ryanBuild/CMakeFiles/progress.marks b/ryanBuild/CMakeFiles/progress.marks[m
+[1mindex 0cfbf08..00750ed 100644[m
+[1m--- a/ryanBuild/CMakeFiles/progress.marks[m
+[1m+++ b/ryanBuild/CMakeFiles/progress.marks[m
+[36m@@ -1 +1 @@[m
+[31m-2[m
+[32m+[m[32m3[m
+[1mdiff --git a/ryanBuild/DineAutoProgram b/ryanBuild/DineAutoProgram[m
+[1mindex 78af6cf..6e9a4ad 100755[m
+Binary files a/ryanBuild/DineAutoProgram and b/ryanBuild/DineAutoProgram differ
+[1mdiff --git a/ryanBuild/Makefile b/ryanBuild/Makefile[m
+[1mindex 2702f01..845fd32 100644[m
+[1m--- a/ryanBuild/Makefile[m
+[1m+++ b/ryanBuild/Makefile[m
+[36m@@ -153,6 +153,30 @@[m [mmain.cpp.s:[m
+ 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/main.cpp.s[m
+ .PHONY : main.cpp.s[m
+ [m
+[32m+[m[32morderDataBase.o: orderDataBase.cpp.o[m
+[32m+[m[32m.PHONY : orderDataBase.o[m
+[32m+[m
+[32m+[m[32m# target to build an object file[m
+[32m+[m[32morderDataBase.cpp.o:[m
+[32m+[m	[32m$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o[m
+[32m+[m[32m.PHONY : orderDataBase.cpp.o[m
+[32m+[m
+[32m+[m[32morderDataBase.i: orderDataBase.cpp.i[m
+[32m+[m[32m.PHONY : orderDataBase.i[m
+[32m+[m
+[32m+[m[32m# target to preprocess a source file[m
+[32m+[m[32morderDataBase.cpp.i:[m
+[32m+[m	[32m$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.i[m
+[32m+[m[32m.PHONY : orderDataBase.cpp.i[m
+[32m+[m
+[32m+[m[32morderDataBase.s: orderDataBase.cpp.s[m
+[32m+[m[32m.PHONY : orderDataBase.s[m
+[32m+[m
+[32m+[m[32m# target to generate assembly for a file[m
+[32m+[m[32morderDataBase.cpp.s:[m
+[32m+[m	[32m$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.s[m
+[32m+[m[32m.PHONY : orderDataBase.cpp.s[m
+[32m+[m
+ # Help Target[m
+ help:[m
+ 	@echo "The following are some of the valid targets for this Makefile:"[m
+[36m@@ -165,6 +189,9 @@[m [mhelp:[m
+ 	@echo "... main.o"[m
+ 	@echo "... main.i"[m
+ 	@echo "... main.s"[m
+[32m+[m	[32m@echo "... orderDataBase.o"[m
+[32m+[m	[32m@echo "... orderDataBase.i"[m
+[32m+[m	[32m@echo "... orderDataBase.s"[m
+ .PHONY : help[m
+ [m
+ [m

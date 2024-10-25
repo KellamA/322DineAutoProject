@@ -153,6 +153,102 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+menu.o: menu.cpp.o
+.PHONY : menu.o
+
+# target to build an object file
+menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menu.cpp.o
+.PHONY : menu.cpp.o
+
+menu.i: menu.cpp.i
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menu.cpp.i
+.PHONY : menu.cpp.i
+
+menu.s: menu.cpp.s
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menu.cpp.s
+.PHONY : menu.cpp.s
+
+menuItem.o: menuItem.cpp.o
+.PHONY : menuItem.o
+
+# target to build an object file
+menuItem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menuItem.cpp.o
+.PHONY : menuItem.cpp.o
+
+menuItem.i: menuItem.cpp.i
+.PHONY : menuItem.i
+
+# target to preprocess a source file
+menuItem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menuItem.cpp.i
+.PHONY : menuItem.cpp.i
+
+menuItem.s: menuItem.cpp.s
+.PHONY : menuItem.s
+
+# target to generate assembly for a file
+menuItem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menuItem.cpp.s
+.PHONY : menuItem.cpp.s
+
+orderDataBase.o: orderDataBase.cpp.o
+.PHONY : orderDataBase.o
+
+# target to build an object file
+orderDataBase.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o
+.PHONY : orderDataBase.cpp.o
+
+orderDataBase.i: orderDataBase.cpp.i
+.PHONY : orderDataBase.i
+
+# target to preprocess a source file
+orderDataBase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.i
+.PHONY : orderDataBase.cpp.i
+
+orderDataBase.s: orderDataBase.cpp.s
+.PHONY : orderDataBase.s
+
+# target to generate assembly for a file
+orderDataBase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.s
+.PHONY : orderDataBase.cpp.s
+
+shoppingCart.o: shoppingCart.cpp.o
+.PHONY : shoppingCart.o
+
+# target to build an object file
+shoppingCart.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o
+.PHONY : shoppingCart.cpp.o
+
+shoppingCart.i: shoppingCart.cpp.i
+.PHONY : shoppingCart.i
+
+# target to preprocess a source file
+shoppingCart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.i
+.PHONY : shoppingCart.cpp.i
+
+shoppingCart.s: shoppingCart.cpp.s
+.PHONY : shoppingCart.s
+
+# target to generate assembly for a file
+shoppingCart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.s
+.PHONY : shoppingCart.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +261,18 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... menu.o"
+	@echo "... menu.i"
+	@echo "... menu.s"
+	@echo "... menuItem.o"
+	@echo "... menuItem.i"
+	@echo "... menuItem.s"
+	@echo "... orderDataBase.o"
+	@echo "... orderDataBase.i"
+	@echo "... orderDataBase.s"
+	@echo "... shoppingCart.o"
+	@echo "... shoppingCart.i"
+	@echo "... shoppingCart.s"
 .PHONY : help
 
 
