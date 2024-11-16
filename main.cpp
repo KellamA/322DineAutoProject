@@ -105,7 +105,7 @@ int main() {
         // END
         
         // shoppingCart tests
-        menuItem newItem(123456, "Bob", 2);
+        /* menuItem newItem(123456, "Bob", 2);
         shoppingCart cart;
         cart.addToCart(newItem);
 
@@ -121,7 +121,21 @@ int main() {
 
         cout << endl << "Cart after removal:" << endl;
         cart.removeFromCart("Bob");
+        cart.displayCart(); */
+
+        // price of shopping cart tests
+        
+
+        shoppingCart cart("Bob");
+        menuItem fries(12345, "fries", 5, 12.40);
+        cart.addToCart(fries);
+        menuItem burger(4231, "burger", 3, 4.20);
+        cart.addToCart(burger);
         cart.displayCart();
+        cart.displayTotalPrice();
+        //cart.readCreditCards(cardFile, cards);
+        cart.verifyPayment();
+        
 
         return 0;
     }
