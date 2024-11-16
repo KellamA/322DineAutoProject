@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+menu.o: menu.cpp.o
+.PHONY : menu.o
+
+# target to build an object file
+menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menu.cpp.o
+.PHONY : menu.cpp.o
+
+menu.i: menu.cpp.i
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menu.cpp.i
+.PHONY : menu.cpp.i
+
+menu.s: menu.cpp.s
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menu.cpp.s
+.PHONY : menu.cpp.s
+
 menuItem.o: menuItem.cpp.o
 .PHONY : menuItem.o
 
@@ -237,6 +261,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... menu.o"
+	@echo "... menu.i"
+	@echo "... menu.s"
 	@echo "... menuItem.o"
 	@echo "... menuItem.i"
 	@echo "... menuItem.s"
