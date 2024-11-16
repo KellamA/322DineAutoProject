@@ -33,13 +33,16 @@ void shoppingCart::removeFromCart(const string &itemToRemove)
     
 }
 
+// Decided to combine displayCart() and displayTotalPrice() into one function
 void shoppingCart::displayCart()
 {
+    float totalPrice = 0.0;
     for (const auto& item : cart)
     {
         cout << "orderName: " << this->orderName << ", itemID: " << item.getItemID() << ", itemName: " << item.getItemName() << ", itemQuantity: " << item.getItemQuantity() << endl;
+        totalPrice += item.getItemPrice();
     }
-    
+    cout << "The total price of " << this->orderName << "'s shopping cart is: $" << totalPrice << endl;
 }
 
 void shoppingCart::addToCart(const tuple<int, string, int>& newItem)

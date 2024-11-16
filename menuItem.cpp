@@ -6,6 +6,7 @@ menuItem::menuItem(int newItemID, string newItemName, int newItemQuantity)
     this->itemName = newItemName;
     this->itemQuantity = newItemQuantity;
     this->itemPrice = 0.0;
+    this->itemSR = "";
 }
 
 menuItem::menuItem(int newItemID, string newItemName, int newItemQuantity, float newItemPrice)
@@ -14,6 +15,16 @@ menuItem::menuItem(int newItemID, string newItemName, int newItemQuantity, float
     this->itemName = newItemName;
     this->itemQuantity = newItemQuantity;
     this->itemPrice = newItemPrice;
+    this->itemSR = "";
+}
+
+menuItem::menuItem(int newItemID, string newItemName, int newItemQuantity, float newItemPrice, string newItemSR)
+{
+    this->itemID = newItemID;
+    this->itemName = newItemName;
+    this->itemQuantity = newItemQuantity;
+    this->itemPrice = newItemPrice;
+    this->itemSR = newItemSR;
 }
 
 menuItem::menuItem()
@@ -22,6 +33,7 @@ menuItem::menuItem()
     this->itemName = "";
     this->itemQuantity = 0;   
     this->itemPrice = 0.0;
+    this->itemSR = "";
 }
 
 int menuItem::getItemID() const
@@ -44,6 +56,11 @@ float menuItem::getItemPrice() const
     return this->itemPrice;
 }
 
+string menuItem::getItemSR() const
+{
+    return this->itemSR;
+}
+
 void menuItem::setItemID(int newItemID)
 {
     this->itemID = newItemID;
@@ -62,6 +79,11 @@ void menuItem::setItemQuantity(int newItemQuantity)
 void menuItem::setItemPrice(float newItemPrice)
 {
     this->itemPrice = newItemPrice;
+}
+
+void menuItem::setItemSR(string newItemSR)
+{
+    this->itemSR = newItemSR;
 }
 
 tuple<int, string, int> menuItem::convertToTuple()
