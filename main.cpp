@@ -2,12 +2,21 @@
 #include <vector>
 #include <tuple>    
 #include <filesystem>
+#include <fstream>     // For file handling
+#include <sstream>     // For string streams
+#include <string>      // For std::string
+#include <map>         // For std::map
+#include <vector>      // For std::vector
+#include <algorithm>   // For std::max_element
+#include <ctime>       // For time and date handling
+#include <iomanip>     // For std::get_time (date parsing)
+
 
 #include "orderDataBase.hpp"
 #include "shoppingCart.hpp"
 #include "menu.hpp"
 #include "menuItem.hpp"
-
+#include "analytics.hpp"
 int main() {
     std::string fileName = "../orders.csv"; // Specify the name of the CSV file
     // generic file name so it can find it on any of our computers
@@ -15,7 +24,7 @@ int main() {
 
     int logIn;
     
-    std::cout << "Please login: (1 customer, 2 admin, anything else ends)" << endl;
+    std::cout << "Please login: (1 customer, 2 admin, 3 Analytics Test, anything else ends)" << endl;
     std::cin >> logIn;
 
     int orderNumber;
@@ -124,6 +133,13 @@ int main() {
         cart.displayCart();
 
         return 0;
+    }
+    case 3:
+    {
+        Analytics analytics(fileName);
+
+    // Call the displayMenu function to test the functionality
+        analytics.displayMenu();
     }
 }
 }
