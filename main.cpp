@@ -45,7 +45,7 @@ int main() {
         if(!Menu.empty())
         {
             m.displayItem(Menu);
-            items1 = m.menuSelect(Menu);
+            items1.push_back(m.menuSelect(Menu));
         }
         else{
             cout << "Menu is empty or file not found." << endl;

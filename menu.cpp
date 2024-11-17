@@ -124,3 +124,82 @@ std::vector<std::tuple<int, std::string, int>> menu::menuSelect(const vector<men
     idk.push_back(p);
     return idk;
 }
+
+// Making a new menuSelect() that returns a tuple instead of a vector
+std::vector<std::tuple<int, std::string, int>> menu::menuSelect(const vector<menu>& menu)
+{
+    
+    int choice;
+    int quantity;
+    std::string more;
+    bool More = false;
+    //shoppingCart cart;
+    bool found = false;
+
+    menuItem mess;
+
+    // Shian's variables
+    string name;
+
+    // Adding some stuff -Shian
+    cout << "Enter your name: ";
+    cin >> name;
+    shoppingCart cart(name);
+
+    do 
+    {
+        cout << "What would you like to order? (Input id): ";
+        cin >> choice;
+        found = false;
+        more = " ";
+        for (const auto& item : menu)
+        {
+            if (item.id == choice)
+            {
+                cout << "How many would you like? " << endl;
+                cin >> quantity;
+
+                cout << "You selected: " << quantity << " " << item.itemName << " - $" << item.price << endl;
+                found = true;
+
+                menuItem it(choice, item.itemName, quantity, (item.price*quantity));
+                mess = it;
+                cart.addToCart(it);
+                
+                while (more != "yes" && more != "y" && more != "n" && more != "no")
+                {
+                    cout << "Would you like anything else? (yes or no) " << endl;
+                    cin >> more;
+
+                    if (more == "yes" || more == "y")
+                    {
+                        More = true;
+                    }
+                    else if (more == "no" || more == "n")
+                    {
+                        More = false;
+                    }
+                    else 
+                    {
+                        cout << "Not an answer." << endl;
+                    }
+                }
+                break;
+                
+            }
+        }
+
+        if (!found)
+        {
+            cout << "INVALID ID" << endl;
+            displayItem(menu);
+        }
+    } while (More == true || found == false);
+    
+    cart.displayCart();
+    cart.verifyPayment();
+    std::tuple<int, std::string, int> p = mess.convertToTuple();
+    std::tuple<int, std::string, int> idk;
+    idk.push_back(p);
+    return idk;
+}
