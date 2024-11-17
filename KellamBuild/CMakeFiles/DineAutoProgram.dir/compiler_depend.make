@@ -218,7 +218,6 @@ CMakeFiles/DineAutoProgram.dir/analytics.cpp.o: /home/kellam/322DineAutoProject/
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
 CMakeFiles/DineAutoProgram.dir/main.cpp.o: /home/kellam/322DineAutoProject/322DineAutoProject/main.cpp \
-  /home/kellam/322DineAutoProject/322DineAutoProject/analytics.hpp \
   /home/kellam/322DineAutoProject/322DineAutoProject/menu.hpp \
   /home/kellam/322DineAutoProject/322DineAutoProject/menuItem.hpp \
   /home/kellam/322DineAutoProject/322DineAutoProject/orderDataBase.hpp \
@@ -228,10 +227,8 @@ CMakeFiles/DineAutoProgram.dir/main.cpp.o: /home/kellam/322DineAutoProject/322Di
   /usr/include/asm-generic/errno.h \
   /usr/include/c++/13/algorithm \
   /usr/include/c++/13/backward/binders.h \
-  /usr/include/c++/13/bit \
   /usr/include/c++/13/bits/algorithmfwd.h \
   /usr/include/c++/13/bits/alloc_traits.h \
-  /usr/include/c++/13/bits/allocated_ptr.h \
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/basic_ios.h \
   /usr/include/c++/13/bits/basic_ios.tcc \
@@ -239,7 +236,6 @@ CMakeFiles/DineAutoProgram.dir/main.cpp.o: /home/kellam/322DineAutoProject/322Di
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
-  /usr/include/c++/13/bits/chrono.h \
   /usr/include/c++/13/bits/codecvt.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
@@ -249,10 +245,6 @@ CMakeFiles/DineAutoProgram.dir/main.cpp.o: /home/kellam/322DineAutoProject/322Di
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
-  /usr/include/c++/13/bits/fs_dir.h \
-  /usr/include/c++/13/bits/fs_fwd.h \
-  /usr/include/c++/13/bits/fs_ops.h \
-  /usr/include/c++/13/bits/fs_path.h \
   /usr/include/c++/13/bits/fstream.tcc \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
@@ -268,24 +260,18 @@ CMakeFiles/DineAutoProgram.dir/main.cpp.o: /home/kellam/322DineAutoProject/322Di
   /usr/include/c++/13/bits/locale_facets_nonio.h \
   /usr/include/c++/13/bits/locale_facets_nonio.tcc \
   /usr/include/c++/13/bits/localefwd.h \
-  /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
-  /usr/include/c++/13/bits/node_handle.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
-  /usr/include/c++/13/bits/parse_numbers.h \
   /usr/include/c++/13/bits/postypes.h \
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
-  /usr/include/c++/13/bits/quoted_string.h \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
-  /usr/include/c++/13/bits/shared_ptr.h \
-  /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algo.h \
@@ -306,20 +292,14 @@ CMakeFiles/DineAutoProgram.dir/main.cpp.o: /home/kellam/322DineAutoProject/322Di
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
-  /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
-  /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/uses_allocator.h \
-  /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
-  /usr/include/c++/13/codecvt \
-  /usr/include/c++/13/cstddef \
-  /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
   /usr/include/c++/13/ctime \
@@ -331,7 +311,6 @@ CMakeFiles/DineAutoProgram.dir/main.cpp.o: /home/kellam/322DineAutoProject/322Di
   /usr/include/c++/13/ext/aligned_buffer.h \
   /usr/include/c++/13/ext/alloc_traits.h \
   /usr/include/c++/13/ext/atomicity.h \
-  /usr/include/c++/13/ext/concurrence.h \
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
@@ -343,20 +322,14 @@ CMakeFiles/DineAutoProgram.dir/main.cpp.o: /home/kellam/322DineAutoProject/322Di
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
-  /usr/include/c++/13/limits \
   /usr/include/c++/13/locale \
   /usr/include/c++/13/map \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/13/pstl/pstl_config.h \
-  /usr/include/c++/13/ratio \
   /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
-  /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
@@ -373,7 +346,6 @@ CMakeFiles/DineAutoProgram.dir/main.cpp.o: /home/kellam/322DineAutoProject/322Di
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/time.h \
@@ -398,8 +370,6 @@ CMakeFiles/DineAutoProgram.dir/main.cpp.o: /home/kellam/322DineAutoProject/322Di
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
@@ -463,8 +433,7 @@ CMakeFiles/DineAutoProgram.dir/main.cpp.o: /home/kellam/322DineAutoProject/322Di
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
 CMakeFiles/DineAutoProgram.dir/menu.cpp.o: /home/kellam/322DineAutoProject/322DineAutoProject/menu.cpp \
   /home/kellam/322DineAutoProject/322DineAutoProject/menu.hpp \
@@ -474,7 +443,6 @@ CMakeFiles/DineAutoProgram.dir/menu.cpp.o: /home/kellam/322DineAutoProject/322Di
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/c++/13/backward/binders.h \
-  /usr/include/c++/13/bit \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/basic_ios.h \
@@ -503,7 +471,6 @@ CMakeFiles/DineAutoProgram.dir/menu.cpp.o: /home/kellam/322DineAutoProject/322Di
   /usr/include/c++/13/bits/locale_facets.h \
   /usr/include/c++/13/bits/locale_facets.tcc \
   /usr/include/c++/13/bits/localefwd.h \
-  /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
@@ -530,16 +497,13 @@ CMakeFiles/DineAutoProgram.dir/menu.cpp.o: /home/kellam/322DineAutoProject/322Di
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
-  /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uses_allocator.h \
-  /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
-  /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
   /usr/include/c++/13/cwchar \
@@ -560,12 +524,10 @@ CMakeFiles/DineAutoProgram.dir/menu.cpp.o: /home/kellam/322DineAutoProject/322Di
   /usr/include/c++/13/istream \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
-  /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
@@ -674,7 +636,6 @@ CMakeFiles/DineAutoProgram.dir/menuItem.cpp.o: /home/kellam/322DineAutoProject/3
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/c++/13/backward/binders.h \
-  /usr/include/c++/13/bit \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/basic_ios.h \
@@ -701,7 +662,6 @@ CMakeFiles/DineAutoProgram.dir/menuItem.cpp.o: /home/kellam/322DineAutoProject/3
   /usr/include/c++/13/bits/locale_facets.h \
   /usr/include/c++/13/bits/locale_facets.tcc \
   /usr/include/c++/13/bits/localefwd.h \
-  /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
@@ -724,15 +684,12 @@ CMakeFiles/DineAutoProgram.dir/menuItem.cpp.o: /home/kellam/322DineAutoProject/3
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
-  /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uses_allocator.h \
-  /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
-  /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
   /usr/include/c++/13/cwchar \
@@ -752,11 +709,9 @@ CMakeFiles/DineAutoProgram.dir/menuItem.cpp.o: /home/kellam/322DineAutoProject/3
   /usr/include/c++/13/istream \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
-  /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
@@ -862,7 +817,6 @@ CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o: /home/kellam/322DineAutoProj
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/c++/13/backward/binders.h \
-  /usr/include/c++/13/bit \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/basic_ios.h \
@@ -891,7 +845,6 @@ CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o: /home/kellam/322DineAutoProj
   /usr/include/c++/13/bits/locale_facets.h \
   /usr/include/c++/13/bits/locale_facets.tcc \
   /usr/include/c++/13/bits/localefwd.h \
-  /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
@@ -918,16 +871,13 @@ CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o: /home/kellam/322DineAutoProj
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
-  /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uses_allocator.h \
-  /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
-  /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
   /usr/include/c++/13/ctime \
@@ -949,12 +899,10 @@ CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o: /home/kellam/322DineAutoProj
   /usr/include/c++/13/istream \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
-  /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
@@ -1065,7 +1013,6 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
   /usr/include/asm-generic/errno.h \
   /usr/include/c++/13/algorithm \
   /usr/include/c++/13/backward/binders.h \
-  /usr/include/c++/13/bit \
   /usr/include/c++/13/bits/algorithmfwd.h \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocator.h \
@@ -1075,6 +1022,7 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
+  /usr/include/c++/13/bits/codecvt.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
@@ -1082,6 +1030,7 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/fstream.tcc \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
@@ -1093,7 +1042,6 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
   /usr/include/c++/13/bits/locale_facets.h \
   /usr/include/c++/13/bits/locale_facets.tcc \
   /usr/include/c++/13/bits/localefwd.h \
-  /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
@@ -1122,17 +1070,14 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
-  /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/uses_allocator.h \
-  /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
-  /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
   /usr/include/c++/13/cwchar \
@@ -1145,6 +1090,7 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/fstream \
   /usr/include/c++/13/initializer_list \
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
@@ -1152,13 +1098,9 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
   /usr/include/c++/13/istream \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
-  /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
@@ -1240,8 +1182,10 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
@@ -1262,25 +1206,11 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
 
 /home/kellam/322DineAutoProject/322DineAutoProject/menuItem.cpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
-
-/usr/include/stdint.h:
-
-/usr/include/c++/13/limits:
-
-/usr/include/c++/13/bits/shared_ptr_base.h:
-
-/usr/include/c++/13/bits/quoted_string.h:
-
-/usr/include/c++/13/bits/parse_numbers.h:
-
 /usr/include/c++/13/bits/locale_facets_nonio.tcc:
 
 /usr/include/c++/13/bits/locale_facets_nonio.h:
 
 /usr/include/c++/13/bits/locale_conv.h:
-
-/usr/include/c++/13/bits/chrono.h:
 
 /home/kellam/322DineAutoProject/322DineAutoProject/orderDataBase.hpp:
 
@@ -1291,8 +1221,6 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -1313,8 +1241,6 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
 /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/c++/13/bits/unique_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
@@ -1361,8 +1287,6 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/c++/13/bits/shared_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
@@ -1418,8 +1342,6 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
 
 /usr/include/c++/13/bits/stl_construct.h:
 
-/usr/include/c++/13/cstdint:
-
 /usr/include/c++/13/cstdlib:
 
 /home/kellam/322DineAutoProject/322DineAutoProject/menu.hpp:
@@ -1438,8 +1360,6 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
 
 /usr/include/c++/13/ios:
 
-/usr/include/c++/13/bits/fs_fwd.h:
-
 /usr/include/time.h:
 
 /usr/include/c++/13/bits/memoryfwd.h:
@@ -1456,11 +1376,7 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
 
 /usr/include/c++/13/bits/allocator.h:
 
-/usr/include/c++/13/bits/fs_dir.h:
-
 /usr/include/c++/13/sstream:
-
-/usr/include/c++/13/bits/fs_ops.h:
 
 /usr/include/c++/13/bits/locale_classes.h:
 
@@ -1511,8 +1427,6 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/13/algorithm:
-
-/usr/include/c++/13/ratio:
 
 /usr/include/c++/13/bits/sstream.tcc:
 
@@ -1652,17 +1566,11 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
 
 /usr/include/c++/13/bits/vector.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/c++/13/cerrno:
 
-/usr/include/c++/13/bits/allocated_ptr.h:
-
 /usr/include/c++/13/clocale:
-
-/usr/include/c++/13/bits/fs_path.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -1673,8 +1581,6 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
 /usr/include/c++/13/bits/stl_pair.h:
 
 /usr/include/c++/13/cstdio:
-
-/usr/include/c++/13/codecvt:
 
 /usr/include/c++/13/ctime:
 
@@ -1735,8 +1641,6 @@ CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o: /home/kellam/322DineAutoProje
 /usr/include/c++/13/pstl/execution_defs.h:
 
 /home/kellam/322DineAutoProject/322DineAutoProject/menu.cpp:
-
-/usr/include/c++/13/ext/concurrence.h:
 
 /usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
