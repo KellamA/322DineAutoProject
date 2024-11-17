@@ -38,123 +38,99 @@ int main() {
     case 1: {       
         std::string filename = "../menu.csv"; // if debugging it needs to be menu.csv, if running build it needs to be ../menu.csv
 
-        menu m;
-        vector<menu> Menu = m.getMenu(filename);
-        std::vector<std::tuple<int, std::string, int>> items1;
-        
-        if(!Menu.empty())
-        {
-            m.displayItem(Menu);
-            items1 = m.menuSelect(Menu);
-        }
-        else{
-            cout << "Menu is empty or file not found." << endl;
-            break;
-        }
-        
-        std::cout << "What is todays date? (format: YYYY-MM-DD) ";
-        std::cin >> date;
-        std::cin.ignore();
-        std::cout << "Enter any special requests (or leave blank if none): ";
-        std::getline(std::cin, specialRequest);
-
-        // Add the order to the database
-        orderDB.addOrder(5, date, items1, specialRequest);
-
-        std::cout << "Order has been added to the database.\n";
+    menu m;
+    vector<menu> Menu = m.getMenu(filename);
+    std::vector<std::tuple<int, std::string, int>> items1;
+    
+    if (!Menu.empty()) {
+        m.displayItem(Menu);
+        items1 = m.menuSelect(Menu);
+    } else {
+        std::cout << "Menu is empty or file not found." << std::endl;
         break;
     }
+
+    // Get the current date in YYYY-MM-DD format
+    std::time_t t = std::time(nullptr);
+    std::tm* now = std::localtime(&t);
+    std::ostringstream dateStream;
+    dateStream << std::put_time(now, "%Y-%m-%d");
+    date = dateStream.str(); // Store the current date in 'date'
+
+    std::cout << "Date automatically set to: " << date << "\n";
+
+    std::cout << "Enter any special requests (or leave blank if none): ";
+    std::getline(std::cin, specialRequest);
+
+    // Add the order to the database
+    orderDB.addOrder(5, date, items1, specialRequest);
+
+    std::cout << "Order has been added to the database.\n";
+    break;
+    }
     case 2: {
-           // Manually enter order details
-        std::cout << "Enter order number: ";
-        std::cin >> orderNumber;
+        // Manually enter order details
+    std::cout << "Enter order number: ";
+    std::cin >> orderNumber;
 
-        std::cin.ignore(); // Ignore the leftover newline character from previous input
+    std::cin.ignore(); // Ignore the leftover newline character from previous input
 
-        std::cout << "Enter order date (format: YYYY-MM-DD): ";
-        std::getline(std::cin, date);
+    // Get the current date in YYYY-MM-DD format
+    std::time_t t = std::time(nullptr);
+    std::tm* now = std::localtime(&t);
+    std::ostringstream dateStream;
+    dateStream << std::put_time(now, "%Y-%m-%d");
+    date = dateStream.str(); // Store the current date in 'date'
 
-        std::cout << "Enter the number of items in the order: ";
-        std::cin >> numItems;
+    std::cout << "Order date automatically set to: " << date << "\n";
 
-        std::vector<std::tuple<int, std::string, int>> items;
+    std::cout << "Enter the number of items in the order: ";
+    std::cin >> numItems;
 
-        // For each item, ask for the item ID, name, and quantity
-        for (int i = 0; i < numItems; i++) {
-            int itemID;
-            std::string itemName;
-            int itemQuantity;
+    std::vector<std::tuple<int, std::string, int>> items;
 
-            std::cout << "Enter details for item " << i + 1 << ":\n";
-            std::cout << "Item ID: ";
-            std::cin >> itemID;
+    // For each item, ask for the item ID, name, and quantity
+    for (int i = 0; i < numItems; i++) {
+        int itemID;
+        std::string itemName;
+        int itemQuantity;
 
-            std::cin.ignore(); // Ignore the newline character
+        std::cout << "Enter details for item " << i + 1 << ":\n";
+        std::cout << "Item ID: ";
+        std::cin >> itemID;
 
-            std::cout << "Item name: ";
-            std::getline(std::cin, itemName);
+        std::cin.ignore(); // Ignore the newline character
 
-            std::cout << "Item quantity: ";
-            std::cin >> itemQuantity;
+        std::cout << "Item name: ";
+        std::getline(std::cin, itemName);
 
-            // Add the item to the vector
-            items.push_back(std::make_tuple(itemID, itemName, itemQuantity));
-        }
+        std::cout << "Item quantity: ";
+        std::cin >> itemQuantity;
 
-        std::cin.ignore(); // Ignore the newline character before entering special requests
+        // Add the item to the vector
+        items.push_back(std::make_tuple(itemID, itemName, itemQuantity));
+    }
 
-        // Ask for any special request
-        std::cout << "Enter any special requests (or leave blank if none): ";
-        std::getline(std::cin, specialRequest);
+    std::cin.ignore(); // Ignore the newline character before entering special requests
 
-        // Add the order to the database
-        orderDB.addOrder(orderNumber, date, items, specialRequest);
+    // Ask for any special request
+    std::cout << "Enter any special requests (or leave blank if none): ";
+    std::getline(std::cin, specialRequest);
 
-        std::cout << "Order has been added to the database.\n";
+    // Add the order to the database
+    orderDB.addOrder(orderNumber, date, items, specialRequest);
 
+    std::cout << "Order has been added to the database.\n";
 
-        // END
         
-        // shoppingCart tests
-        /* menuItem newItem(123456, "Bob", 2);
-        shoppingCart cart;
-        cart.addToCart(newItem);
-
-            menuItem frenchFries;
-            frenchFries.setItemID(22222);
-            frenchFries.setItemName("French fries");
-            frenchFries.setItemQuantity(5);
-
-            cart.addToCart(frenchFries);
-
-            cout << endl << "Cart before removal:" << endl;
-            cart.displayCart();
-
-        cout << endl << "Cart after removal:" << endl;
-        cart.removeFromCart("Bob");
-        cart.displayCart(); */
-
-        // price of shopping cart tests
-        
-
-        /* shoppingCart cart("Bob");
-        menuItem fries(12345, "fries", 5, 12.40);
-        cart.addToCart(fries);
-        menuItem burger(4231, "burger", 3, 4.20);
-        cart.addToCart(burger);
-        cart.displayCart();
-        cart.displayTotalPrice();
-        cart.verifyPayment(); */
-        
-
+    
         return 0;
     }
     case 3:
     {
         Analytics analytics(fileName);
+        analytics.runAnalytics();
 
-    // Call the displayMenu function to test the functionality
-        analytics.displayMenu();
     }
 }
 }
