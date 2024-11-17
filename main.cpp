@@ -32,6 +32,8 @@ int main() {
     int numItems;
     std::string specialRequest;
 
+    string name;
+
     switch(logIn){
     case 1: {       
         std::string filename = "../menu.csv"; // if debugging it needs to be menu.csv, if running build it needs to be ../menu.csv
@@ -50,12 +52,12 @@ int main() {
             break;
         }
         
-        std::cout << "What is todays date? ";
+        std::cout << "What is todays date? (format: YYYY-MM-DD) ";
         std::cin >> date;
         std::cin.ignore();
         std::cout << "Enter any special requests (or leave blank if none): ";
         std::getline(std::cin, specialRequest);
-        
+
         // Add the order to the database
         orderDB.addOrder(5, date, items1, specialRequest);
 
@@ -114,7 +116,7 @@ int main() {
         // END
         
         // shoppingCart tests
-        menuItem newItem(123456, "Bob", 2);
+        /* menuItem newItem(123456, "Bob", 2);
         shoppingCart cart;
         cart.addToCart(newItem);
 
@@ -130,7 +132,20 @@ int main() {
 
         cout << endl << "Cart after removal:" << endl;
         cart.removeFromCart("Bob");
+        cart.displayCart(); */
+
+        // price of shopping cart tests
+        
+
+        /* shoppingCart cart("Bob");
+        menuItem fries(12345, "fries", 5, 12.40);
+        cart.addToCart(fries);
+        menuItem burger(4231, "burger", 3, 4.20);
+        cart.addToCart(burger);
         cart.displayCart();
+        cart.displayTotalPrice();
+        cart.verifyPayment(); */
+        
 
         return 0;
     }
