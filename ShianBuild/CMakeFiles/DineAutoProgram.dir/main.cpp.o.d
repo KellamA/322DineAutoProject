@@ -176,4 +176,5 @@ CMakeFiles/DineAutoProgram.dir/main.cpp.o: \
  /home/shianwen123/DineAuto/322DineAutoProject/orderDataBase.hpp \
  /home/shianwen123/DineAuto/322DineAutoProject/shoppingCart.hpp \
  /home/shianwen123/DineAuto/322DineAutoProject/menuItem.hpp \
- /home/shianwen123/DineAuto/322DineAutoProject/menu.hpp
+ /home/shianwen123/DineAuto/322DineAutoProject/menu.hpp \
+ /home/shianwen123/DineAuto/322DineAutoProject/analytics.hpp
