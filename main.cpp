@@ -38,38 +38,43 @@ int main() {
     case 1: {       
         std::string filename = "../menu.csv"; // if debugging it needs to be menu.csv, if running build it needs to be ../menu.csv
 
-        menu m;
-        vector<menu> Menu = m.getMenu(filename);
-        std::vector<std::tuple<int, std::string, int>> items1;
-        
-        if(!Menu.empty())
+    menu m;
+    vector<menu> Menu = m.getMenu(filename);
+    std::vector<std::tuple<int, std::string, int>> items1;
+    
+    if(!Menu.empty())
+    {
+        m.displayItem(Menu);
+        items1 = m.menuSelect(Menu);
+        for (int i = 0; i < items1.size(); i++)
         {
-            m.displayItem(Menu);
-            items1 = m.menuSelect(Menu);
-            for (int i = 0; i < items1.size(); i++)
-            {
-                cout << "(" 
-                << get<0>(items1[i]) << ", "
-                << get<1>(items1[i]) << ", "
-                << get<2>(items1[i]) << ")" << endl;
-            }
-            
-        }
-        else{
-            cout << "Menu is empty or file not found." << endl;
-            break;
+            cout << "(" 
+            << get<0>(items1[i]) << ", "
+            << get<1>(items1[i]) << ", "
+            << get<2>(items1[i]) << ")" << endl;
         }
         
-        std::cout << "What is todays date? (format: YYYY-MM-DD) ";
-        std::cin >> date;
-        std::cin.ignore();
-        std::cout << "Enter any special requests (or leave blank if none): ";
-        std::getline(std::cin, specialRequest);
+    }
+    else{
+        cout << "Menu is empty or file not found." << endl;
+        break;
+    }
+    
+    // Get the current date in YYYY-MM-DD format automatically
+    std::time_t t = std::time(nullptr);
+    std::tm* now = std::localtime(&t);
+    std::ostringstream dateStream;
+    dateStream << std::put_time(now, "%Y-%m-%d");
+    date = dateStream.str(); // Store the current date in 'date'
+    
+    std::cout << "Enter any special requests (or leave blank if none): ";
+    std::getline(std::cin, specialRequest);
 
     // Add the order to the database
     orderDB.addOrder(5, date, items1, specialRequest);
 
     std::cout << "Order has been added to the database.\n";
+    break; // Make sure to include a break statement if needed
 
     /* for (int i = 0; i < items1.size(); i++)
     {
