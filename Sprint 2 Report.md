@@ -1,5 +1,5 @@
 # Sprint 2 Report 
-Video Link: 
+Video Link: https://youtu.be/s2-X6ZMs-LQ
 ## What's New (User Facing)
  * Created data analytics
  * Created payment verification
