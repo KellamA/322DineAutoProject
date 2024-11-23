@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Assign Issue
-        uses: actions/assign-issue@v2.0.1
+        uses: actions-ecosystem/action-assign@v2
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           assignees: 'KellamA' # Replace with the GitHub username of the assignee
