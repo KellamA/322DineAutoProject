@@ -14,4 +14,4 @@ jobs:
         uses: actions-ecosystem/action-assign@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          assignees: [Ryan-Huber1] # Replace with the GitHub username of the team member to assign
+          assignees: Ryan-Huber1 
