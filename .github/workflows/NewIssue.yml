@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Assign Issue
-        uses: actions-ecosystem/action-assign@v2
+        uses: peter-evans/create-or-update-comment@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           assignees: 'KellamA' # Replace 'your-username' with the GitHub username
