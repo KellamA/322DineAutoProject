@@ -5,16 +5,13 @@ on:
     types:
       - opened
 
-permissions:
-  issues: write  # Ensures the workflow can modify issues
-
 jobs:
   assign-issue:
     runs-on: ubuntu-latest
 
     steps:
       - name: Assign Issue
-        uses: ridedott/assign-issue@v2.0.1
+        uses: actions/assign-issue@v2.0.1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          assignees: 'KellamA' # Replace with the GitHub username
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          assignees: 'KellamA' # Replace with the GitHub username of the assignee
