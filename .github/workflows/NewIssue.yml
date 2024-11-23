@@ -1,17 +1,6 @@
-name: Auto Assign Issue
-
-on:
-  issues:
-    types:
-      - opened
-
-jobs:
-  assign-issue:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Assign Issue
-        uses: peter-evans/create-or-update-comment@v2
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          assignees: 'KellamA' # Replace 'your-username' with the GitHub username
+- name: Assign Issue
+  uses: actions-ecosystem/action-assign@v2
+  with:
+    github-token: ${{ secrets.GITHUB_TOKEN }}
+    assignees: 
+      - ['KellamA'] 
