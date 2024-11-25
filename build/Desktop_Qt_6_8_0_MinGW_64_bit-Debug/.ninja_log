@@ -1,0 +1,85 @@
+# ninja log v6
+18	210	7542036403841802	DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+736	3274	7542022863958519	CMakeFiles/DineAutoProjectV3.dir/DineAutoProjectV3_autogen/mocs_compilation.cpp.obj	fbb4d834374df774
+18	210	7542036403841802	DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+1378	3223	7542015698081684	CMakeFiles/DineAutoProjectV3.dir/Temp/orderDataBase.cpp.obj	44bc4a607c0ffb72
+18	210	7542036403841802	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+18	210	7542036403841802	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+10	887	7542037232622150	build.ninja	85a1fa3c24381dbb
+1362	3978	7542015697918416	CMakeFiles/DineAutoProjectV3.dir/Temp/menu.cpp.obj	1ccfaddc157116a9
+763	3547	7542022864149619	CMakeFiles/DineAutoProjectV3.dir/main.cpp.obj	13d98cb5f0d02572
+3513	4270	7542036438794947	DineAutoProjectV3.exe	2d5384b462e08a60
+10	51	7542015682837949	CMakeFiles/clean.additional	f33ea1ceecbd1f05
+52	67	7542015683334426	clean	55d422131be38e19
+212	3177	7542036405784131	CMakeFiles/DineAutoProjectV3.dir/LoginScreenUI.cpp.obj	c8176467c3e06feb
+236	3513	7542036405881669	CMakeFiles/DineAutoProjectV3.dir/MenuScreenUI.cpp.obj	aa20ec27622de1d7
+1370	3427	7542015698000205	CMakeFiles/DineAutoProjectV3.dir/Temp/menuItem.cpp.obj	7013536ad85bceea
+1388	3129	7542015698157177	CMakeFiles/DineAutoProjectV3.dir/Temp/shoppingCart.cpp.obj	847c1bcd8b47842
+240	3090	7542036406064702	CMakeFiles/DineAutoProjectV3.dir/CartDialog.cpp.obj	d21ced1c9352963e
+246	2815	7542036406125112	CMakeFiles/DineAutoProjectV3.dir/CheckoutDialog.cpp.obj	8c6b3a5cac97e78e
+16	223	7542037844621730	DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+16	223	7542037844621730	DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+16	223	7542037844621730	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+16	223	7542037844621730	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+253	2975	7542037846856587	CMakeFiles/DineAutoProjectV3.dir/CartDialog.cpp.obj	d21ced1c9352963e
+225	2978	7542037846711343	CMakeFiles/DineAutoProjectV3.dir/LoginScreenUI.cpp.obj	c8176467c3e06feb
+250	3293	7542037846856587	CMakeFiles/DineAutoProjectV3.dir/MenuScreenUI.cpp.obj	aa20ec27622de1d7
+256	3348	7542037847016525	CMakeFiles/DineAutoProjectV3.dir/CheckoutDialog.cpp.obj	8c6b3a5cac97e78e
+3348	4142	7542037877951084	DineAutoProjectV3.exe	2d5384b462e08a60
+15	224	7542038491884650	DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+15	224	7542038491884650	DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+15	224	7542038491884650	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+15	224	7542038491884650	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+250	2785	7542038494232594	CMakeFiles/DineAutoProjectV3.dir/CartDialog.cpp.obj	d21ced1c9352963e
+248	3112	7542038494189235	CMakeFiles/DineAutoProjectV3.dir/MenuScreenUI.cpp.obj	aa20ec27622de1d7
+254	3398	7542038494276825	CMakeFiles/DineAutoProjectV3.dir/CheckoutDialog.cpp.obj	8c6b3a5cac97e78e
+225	3470	7542038493975814	CMakeFiles/DineAutoProjectV3.dir/LoginScreenUI.cpp.obj	c8176467c3e06feb
+3470	4258	7542038526403693	DineAutoProjectV3.exe	2d5384b462e08a60
+15	254	7542040396594279	DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+15	254	7542040396594279	DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+15	254	7542040396594279	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+15	254	7542040396594279	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+256	3222	7542040399002544	CMakeFiles/DineAutoProjectV3.dir/LoginScreenUI.cpp.obj	c8176467c3e06feb
+312	3404	7542040399534459	CMakeFiles/DineAutoProjectV3.dir/CheckoutDialog.cpp.obj	8c6b3a5cac97e78e
+300	3455	7542040399445261	CMakeFiles/DineAutoProjectV3.dir/CartDialog.cpp.obj	d21ced1c9352963e
+292	3612	7542040399354135	CMakeFiles/DineAutoProjectV3.dir/MenuScreenUI.cpp.obj	aa20ec27622de1d7
+3613	4398	7542040432573213	DineAutoProjectV3.exe	2d5384b462e08a60
+16	229	7542041056786390	DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+16	229	7542041056786390	DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+16	229	7542041056786390	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+16	229	7542041056786390	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+252	2667	7542041059028375	CMakeFiles/DineAutoProjectV3.dir/CartDialog.cpp.obj	d21ced1c9352963e
+248	3411	7542041059028375	CMakeFiles/DineAutoProjectV3.dir/MenuScreenUI.cpp.obj	aa20ec27622de1d7
+256	3426	7542041059179424	CMakeFiles/DineAutoProjectV3.dir/CheckoutDialog.cpp.obj	8c6b3a5cac97e78e
+230	3499	7542041058918292	CMakeFiles/DineAutoProjectV3.dir/LoginScreenUI.cpp.obj	c8176467c3e06feb
+3499	4356	7542041091617931	DineAutoProjectV3.exe	2d5384b462e08a60
+17	253	7542041400286469	DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+17	253	7542041400286469	DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+17	253	7542041400286469	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+17	253	7542041400286469	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+256	3021	7542041402677866	CMakeFiles/DineAutoProjectV3.dir/main.cpp.obj	13d98cb5f0d02572
+277	3100	7542041402886763	CMakeFiles/DineAutoProjectV3.dir/LoginScreenUI.cpp.obj	c8176467c3e06feb
+287	3377	7542041402984760	CMakeFiles/DineAutoProjectV3.dir/CartDialog.cpp.obj	d21ced1c9352963e
+283	3649	7542041402926792	CMakeFiles/DineAutoProjectV3.dir/MenuScreenUI.cpp.obj	aa20ec27622de1d7
+291	3762	7542041403004156	CMakeFiles/DineAutoProjectV3.dir/CheckoutDialog.cpp.obj	8c6b3a5cac97e78e
+3762	4526	7542041437670006	DineAutoProjectV3.exe	2d5384b462e08a60
+15	230	7542042235870422	DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+15	230	7542042235870422	DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+15	230	7542042235870422	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+15	230	7542042235870422	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+231	2861	7542042238023430	CMakeFiles/DineAutoProjectV3.dir/main.cpp.obj	13d98cb5f0d02572
+279	3202	7542042238498019	CMakeFiles/DineAutoProjectV3.dir/CheckoutDialog.cpp.obj	8c6b3a5cac97e78e
+272	3203	7542042238436623	CMakeFiles/DineAutoProjectV3.dir/CartDialog.cpp.obj	d21ced1c9352963e
+258	3395	7542042238182167	CMakeFiles/DineAutoProjectV3.dir/LoginScreenUI.cpp.obj	c8176467c3e06feb
+265	3870	7542042238342550	CMakeFiles/DineAutoProjectV3.dir/MenuScreenUI.cpp.obj	aa20ec27622de1d7
+3870	4685	7542042274367682	DineAutoProjectV3.exe	2d5384b462e08a60
+26	288	7542046579916176	DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+26	288	7542046579916176	DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+26	288	7542046579916176	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/timestamp	8b3da6ac743cedab
+26	288	7542046579916176	C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/mocs_compilation.cpp	8b3da6ac743cedab
+289	3059	7542046582545257	CMakeFiles/DineAutoProjectV3.dir/main.cpp.obj	13d98cb5f0d02572
+333	3311	7542046582987439	CMakeFiles/DineAutoProjectV3.dir/CartDialog.cpp.obj	d21ced1c9352963e
+324	3681	7542046582893996	CMakeFiles/DineAutoProjectV3.dir/MenuScreenUI.cpp.obj	aa20ec27622de1d7
+342	4012	7542046583057420	CMakeFiles/DineAutoProjectV3.dir/CheckoutDialog.cpp.obj	8c6b3a5cac97e78e
+317	4031	7542046582814295	CMakeFiles/DineAutoProjectV3.dir/LoginScreenUI.cpp.obj	c8176467c3e06feb
+4031	4881	7542046619941554	DineAutoProjectV3.exe	2d5384b462e08a60
