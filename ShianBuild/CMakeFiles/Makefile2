@@ -81,12 +81,12 @@ clean: CMakeFiles/DineAutoProgram.dir/clean
 CMakeFiles/DineAutoProgram.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shianwen123/DineAuto/322DineAutoProject/ShianBuild/CMakeFiles --progress-num=1,2,3,4,5 "Built target DineAutoProgram"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shianwen123/DineAuto/322DineAutoProject/ShianBuild/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target DineAutoProgram"
 .PHONY : CMakeFiles/DineAutoProgram.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DineAutoProgram.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shianwen123/DineAuto/322DineAutoProject/ShianBuild/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shianwen123/DineAuto/322DineAutoProject/ShianBuild/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DineAutoProgram.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shianwen123/DineAuto/322DineAutoProject/ShianBuild/CMakeFiles 0
 .PHONY : CMakeFiles/DineAutoProgram.dir/rule

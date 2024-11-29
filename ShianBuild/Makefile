@@ -129,6 +129,30 @@ DineAutoProgram/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/build
 .PHONY : DineAutoProgram/fast
 
+analytics.o: analytics.cpp.o
+.PHONY : analytics.o
+
+# target to build an object file
+analytics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/analytics.cpp.o
+.PHONY : analytics.cpp.o
+
+analytics.i: analytics.cpp.i
+.PHONY : analytics.i
+
+# target to preprocess a source file
+analytics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/analytics.cpp.i
+.PHONY : analytics.cpp.i
+
+analytics.s: analytics.cpp.s
+.PHONY : analytics.s
+
+# target to generate assembly for a file
+analytics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/analytics.cpp.s
+.PHONY : analytics.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -152,6 +176,30 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+menu.o: menu.cpp.o
+.PHONY : menu.o
+
+# target to build an object file
+menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menu.cpp.o
+.PHONY : menu.cpp.o
+
+menu.i: menu.cpp.i
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menu.cpp.i
+.PHONY : menu.cpp.i
+
+menu.s: menu.cpp.s
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/menu.cpp.s
+.PHONY : menu.cpp.s
 
 menuItem.o: menuItem.cpp.o
 .PHONY : menuItem.o
@@ -234,9 +282,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DineAutoProgram"
+	@echo "... analytics.o"
+	@echo "... analytics.i"
+	@echo "... analytics.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... menu.o"
+	@echo "... menu.i"
+	@echo "... menu.s"
 	@echo "... menuItem.o"
 	@echo "... menuItem.i"
 	@echo "... menuItem.s"

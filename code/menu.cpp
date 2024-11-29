@@ -54,11 +54,20 @@ std::vector<std::tuple<int, std::string, int>> menu::menuSelect(const vector<men
     int quantity;
     std::string more;
     bool More = false;
-    shoppingCart cart;
+    //shoppingCart cart;
     bool found = false;
 
     menuItem mess;
-    
+
+    // Shian's variables
+    string name;
+
+    // Adding some stuff -Shian
+    cout << "Enter your name: ";
+    cin >> name;
+    shoppingCart cart(name);
+    std::vector<std::tuple<int, std::string, int>> idk;
+
 
     do 
     {
@@ -76,10 +85,13 @@ std::vector<std::tuple<int, std::string, int>> menu::menuSelect(const vector<men
                 cout << "You selected: " << quantity << " " << item.itemName << " - $" << item.price << endl;
                 found = true;
 
-                menuItem it(choice, item.itemName, quantity);
+                menuItem it(choice, item.itemName, quantity, (item.price*quantity));
                 mess = it;
                 cart.addToCart(it);
                 
+                // Changing stuff -Shian
+                std::tuple<int, std::string, int> p = mess.convertToTuple();
+                idk.push_back(p);
                 while (more != "yes" && more != "y" && more != "n" && more != "no")
                 {
                     cout << "Would you like anything else? (yes or no) " << endl;
@@ -111,8 +123,9 @@ std::vector<std::tuple<int, std::string, int>> menu::menuSelect(const vector<men
     } while (More == true || found == false);
     
     cart.displayCart();
-    std::tuple<int, std::string, int> p = mess.convertToTuple();
+    cart.verifyPayment();
+    /* std::tuple<int, std::string, int> p = mess.convertToTuple();
     std::vector<std::tuple<int, std::string, int>> idk;
-    idk.push_back(p);
+    idk.push_back(p); */
     return idk;
 }
