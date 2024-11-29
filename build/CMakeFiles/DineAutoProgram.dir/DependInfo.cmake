@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/kellamadams/322DineAutoProject/analytics.cpp" "CMakeFiles/DineAutoProgram.dir/analytics.cpp.o" "gcc" "CMakeFiles/DineAutoProgram.dir/analytics.cpp.o.d"
   "/home/kellamadams/322DineAutoProject/main.cpp" "CMakeFiles/DineAutoProgram.dir/main.cpp.o" "gcc" "CMakeFiles/DineAutoProgram.dir/main.cpp.o.d"
   "/home/kellamadams/322DineAutoProject/menu.cpp" "CMakeFiles/DineAutoProgram.dir/menu.cpp.o" "gcc" "CMakeFiles/DineAutoProgram.dir/menu.cpp.o.d"
   "/home/kellamadams/322DineAutoProject/menuItem.cpp" "CMakeFiles/DineAutoProgram.dir/menuItem.cpp.o" "gcc" "CMakeFiles/DineAutoProgram.dir/menuItem.cpp.o.d"

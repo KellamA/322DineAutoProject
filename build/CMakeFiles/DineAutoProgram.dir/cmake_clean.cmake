@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DineAutoProgram.dir/analytics.cpp.o"
+  "CMakeFiles/DineAutoProgram.dir/analytics.cpp.o.d"
   "CMakeFiles/DineAutoProgram.dir/main.cpp.o"
   "CMakeFiles/DineAutoProgram.dir/main.cpp.o.d"
   "CMakeFiles/DineAutoProgram.dir/menu.cpp.o"

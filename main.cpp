@@ -7,6 +7,7 @@
 #include "shoppingCart.hpp"
 #include "menu.hpp"
 #include "menuItem.hpp"
+#include "analytics.hpp"
 
 int main() {
     std::string fileName = "../orders.csv"; // Specify the name of the CSV file
@@ -54,52 +55,55 @@ int main() {
         break;
     }
     case 2: {
-           // Manually enter order details
-        std::cout << "Enter order number: ";
-        std::cin >> orderNumber;
 
-        std::cin.ignore(); // Ignore the leftover newline character from previous input
+       
 
-        std::cout << "Enter order date (format: YYYY-MM-DD): ";
-        std::getline(std::cin, date);
+        //    // Manually enter order details
+        // std::cout << "Enter order number: ";
+        // std::cin >> orderNumber;
 
-        std::cout << "Enter the number of items in the order: ";
-        std::cin >> numItems;
+        // std::cin.ignore(); // Ignore the leftover newline character from previous input
 
-        std::vector<std::tuple<int, std::string, int>> items;
+        // std::cout << "Enter order date (format: YYYY-MM-DD): ";
+        // std::getline(std::cin, date);
 
-        // For each item, ask for the item ID, name, and quantity
-        for (int i = 0; i < numItems; i++) {
-            int itemID;
-            std::string itemName;
-            int itemQuantity;
+        // std::cout << "Enter the number of items in the order: ";
+        // std::cin >> numItems;
 
-            std::cout << "Enter details for item " << i + 1 << ":\n";
-            std::cout << "Item ID: ";
-            std::cin >> itemID;
+        // std::vector<std::tuple<int, std::string, int>> items;
 
-            std::cin.ignore(); // Ignore the newline character
+        // // For each item, ask for the item ID, name, and quantity
+        // for (int i = 0; i < numItems; i++) {
+        //     int itemID;
+        //     std::string itemName;
+        //     int itemQuantity;
 
-            std::cout << "Item name: ";
-            std::getline(std::cin, itemName);
+        //     std::cout << "Enter details for item " << i + 1 << ":\n";
+        //     std::cout << "Item ID: ";
+        //     std::cin >> itemID;
 
-            std::cout << "Item quantity: ";
-            std::cin >> itemQuantity;
+        //     std::cin.ignore(); // Ignore the newline character
 
-            // Add the item to the vector
-            items.push_back(std::make_tuple(itemID, itemName, itemQuantity));
-        }
+        //     std::cout << "Item name: ";
+        //     std::getline(std::cin, itemName);
 
-        std::cin.ignore(); // Ignore the newline character before entering special requests
+        //     std::cout << "Item quantity: ";
+        //     std::cin >> itemQuantity;
 
-        // Ask for any special request
-        std::cout << "Enter any special requests (or leave blank if none): ";
-        std::getline(std::cin, specialRequest);
+        //     // Add the item to the vector
+        //     items.push_back(std::make_tuple(itemID, itemName, itemQuantity));
+        // }
 
-        // Add the order to the database
-        orderDB.addOrder(orderNumber, date, items, specialRequest);
+        // std::cin.ignore(); // Ignore the newline character before entering special requests
 
-        std::cout << "Order has been added to the database.\n";
+        // // Ask for any special request
+        // std::cout << "Enter any special requests (or leave blank if none): ";
+        // std::getline(std::cin, specialRequest);
+
+        // // Add the order to the database
+        // orderDB.addOrder(orderNumber, date, items, specialRequest);
+
+        // std::cout << "Order has been added to the database.\n";
 
 
         // END
