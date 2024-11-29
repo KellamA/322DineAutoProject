@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DineAutoProgram.dir/menuItem.cpp.o.d"
   "CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o"
   "CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o.d"
+  "CMakeFiles/DineAutoProgram.dir/queue.cpp.o"
+  "CMakeFiles/DineAutoProgram.dir/queue.cpp.o.d"
   "CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o"
   "CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o.d"
   "DineAutoProgram"

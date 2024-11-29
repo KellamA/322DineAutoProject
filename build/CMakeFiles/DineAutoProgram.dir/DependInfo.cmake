@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/kellamadams/322DineAutoProject/menu.cpp" "CMakeFiles/DineAutoProgram.dir/menu.cpp.o" "gcc" "CMakeFiles/DineAutoProgram.dir/menu.cpp.o.d"
   "/home/kellamadams/322DineAutoProject/menuItem.cpp" "CMakeFiles/DineAutoProgram.dir/menuItem.cpp.o" "gcc" "CMakeFiles/DineAutoProgram.dir/menuItem.cpp.o.d"
   "/home/kellamadams/322DineAutoProject/orderDataBase.cpp" "CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o" "gcc" "CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.o.d"
+  "/home/kellamadams/322DineAutoProject/queue.cpp" "CMakeFiles/DineAutoProgram.dir/queue.cpp.o" "gcc" "CMakeFiles/DineAutoProgram.dir/queue.cpp.o.d"
   "/home/kellamadams/322DineAutoProject/shoppingCart.cpp" "CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o" "gcc" "CMakeFiles/DineAutoProgram.dir/shoppingCart.cpp.o.d"
   )
 

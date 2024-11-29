@@ -2,13 +2,22 @@
 #include <vector>
 #include <tuple>    
 #include <filesystem>
+#include <fstream>     // For file handling
+#include <sstream>     // For string streams
+#include <string>      // For std::string
+#include <map>         // For std::map
+#include <vector>      // For std::vector
+#include <algorithm>   // For std::max_element
+#include <ctime>       // For time and date handling
+#include <iomanip>     // For std::get_time (date parsing)
+
 
 #include "orderDataBase.hpp"
 #include "shoppingCart.hpp"
 #include "menu.hpp"
 #include "menuItem.hpp"
 #include "analytics.hpp"
-
+#include "queue.hpp"
 int main() {
     std::string fileName = "../orders.csv"; // Specify the name of the CSV file
     // generic file name so it can find it on any of our computers
@@ -16,7 +25,7 @@ int main() {
 
     int logIn;
     
-    std::cout << "Please login: (1 customer, 2 admin, anything else ends)" << endl;
+    std::cout << "Please login: (1 customer, 2 admin, 3 Analytics Test, 4 Queue, anything else ends)" << endl;
     std::cin >> logIn;
 
     int orderNumber;
@@ -24,110 +33,129 @@ int main() {
     int numItems;
     std::string specialRequest;
 
+    string name;
+
     switch(logIn){
     case 1: {       
         std::string filename = "../menu.csv"; // if debugging it needs to be menu.csv, if running build it needs to be ../menu.csv
 
-        menu m;
-        vector<menu> Menu = m.getMenu(filename);
-        std::vector<std::tuple<int, std::string, int>> items1;
-        
-        if(!Menu.empty())
+    menu m;
+    vector<menu> Menu = m.getMenu(filename);
+    std::vector<std::tuple<int, std::string, int>> items1;
+    
+    if(!Menu.empty())
+    {
+        m.displayItem(Menu);
+        items1 = m.menuSelect(Menu);
+        for (int i = 0; i < items1.size(); i++)
         {
-            m.displayItem(Menu);
-            items1 = m.menuSelect(Menu);
-        }
-        else{
-            cout << "Menu is empty or file not found." << endl;
-            break;
+            cout << "(" 
+            << get<0>(items1[i]) << ", "
+            << get<1>(items1[i]) << ", "
+            << get<2>(items1[i]) << ")" << endl;
         }
         
-        std::cout << "What is todays date? ";
-        std::cin >> date;
-        std::cin.ignore();
-        std::cout << "Enter any special requests (or leave blank if none): ";
-        std::getline(std::cin, specialRequest);
-        
-        // Add the order to the database
-        orderDB.addOrder(5, date, items1, specialRequest);
-
-        std::cout << "Order has been added to the database.\n";
+    }
+    else{
+        cout << "Menu is empty or file not found." << endl;
         break;
     }
+    
+    // Get the current date in YYYY-MM-DD format automatically
+    std::time_t t = std::time(nullptr);
+    std::tm* now = std::localtime(&t);
+    std::ostringstream dateStream;
+    dateStream << std::put_time(now, "%Y-%m-%d");
+    date = dateStream.str(); // Store the current date in 'date'
+    
+    std::cout << "Enter any special requests (or leave blank if none): ";
+    std::getline(std::cin, specialRequest);
+
+    // Add the order to the database
+    orderDB.addOrder(5, date, items1, specialRequest);
+
+    std::cout << "Order has been added to the database.\n";
+    break; // Make sure to include a break statement if needed
+
+    /* for (int i = 0; i < items1.size(); i++)
+    {
+        cout << "(" 
+        << get<0>(items1[i]) << ", "
+        << get<1>(items1[i]) << ", "
+        << get<2>(items1[i]) << ")" << endl;
+    } */
+    
+
+    break;
+    }
     case 2: {
+        // Manually enter order details
+    std::cout << "Enter order number: ";
+    std::cin >> orderNumber;
 
-       
+    std::cin.ignore(); // Ignore the leftover newline character from previous input
 
-        //    // Manually enter order details
-        // std::cout << "Enter order number: ";
-        // std::cin >> orderNumber;
+    // Get the current date in YYYY-MM-DD format
+    std::time_t t = std::time(nullptr);
+    std::tm* now = std::localtime(&t);
+    std::ostringstream dateStream;
+    dateStream << std::put_time(now, "%Y-%m-%d");
+    date = dateStream.str(); // Store the current date in 'date'
 
-        // std::cin.ignore(); // Ignore the leftover newline character from previous input
+    std::cout << "Order date automatically set to: " << date << "\n";
 
-        // std::cout << "Enter order date (format: YYYY-MM-DD): ";
-        // std::getline(std::cin, date);
+    std::cout << "Enter the number of items in the order: ";
+    std::cin >> numItems;
 
-        // std::cout << "Enter the number of items in the order: ";
-        // std::cin >> numItems;
+    std::vector<std::tuple<int, std::string, int>> items;
 
-        // std::vector<std::tuple<int, std::string, int>> items;
+    // For each item, ask for the item ID, name, and quantity
+    for (int i = 0; i < numItems; i++) {
+        int itemID;
+        std::string itemName;
+        int itemQuantity;
 
-        // // For each item, ask for the item ID, name, and quantity
-        // for (int i = 0; i < numItems; i++) {
-        //     int itemID;
-        //     std::string itemName;
-        //     int itemQuantity;
+        std::cout << "Enter details for item " << i + 1 << ":\n";
+        std::cout << "Item ID: ";
+        std::cin >> itemID;
 
-        //     std::cout << "Enter details for item " << i + 1 << ":\n";
-        //     std::cout << "Item ID: ";
-        //     std::cin >> itemID;
+        std::cin.ignore(); // Ignore the newline character
 
-        //     std::cin.ignore(); // Ignore the newline character
+        std::cout << "Item name: ";
+        std::getline(std::cin, itemName);
 
-        //     std::cout << "Item name: ";
-        //     std::getline(std::cin, itemName);
+        std::cout << "Item quantity: ";
+        std::cin >> itemQuantity;
 
-        //     std::cout << "Item quantity: ";
-        //     std::cin >> itemQuantity;
+        // Add the item to the vector
+        items.push_back(std::make_tuple(itemID, itemName, itemQuantity));
+    }
 
-        //     // Add the item to the vector
-        //     items.push_back(std::make_tuple(itemID, itemName, itemQuantity));
-        // }
+    std::cin.ignore(); // Ignore the newline character before entering special requests
 
-        // std::cin.ignore(); // Ignore the newline character before entering special requests
+    // Ask for any special request
+    std::cout << "Enter any special requests (or leave blank if none): ";
+    std::getline(std::cin, specialRequest);
 
-        // // Ask for any special request
-        // std::cout << "Enter any special requests (or leave blank if none): ";
-        // std::getline(std::cin, specialRequest);
+    // Add the order to the database
+    orderDB.addOrder(orderNumber, date, items, specialRequest);
 
-        // // Add the order to the database
-        // orderDB.addOrder(orderNumber, date, items, specialRequest);
+    std::cout << "Order has been added to the database.\n";
 
-        // std::cout << "Order has been added to the database.\n";
-
-
-        // END
         
-        // shoppingCart tests
-        menuItem newItem(123456, "Bob", 2);
-        shoppingCart cart;
-        cart.addToCart(newItem);
-
-            menuItem frenchFries;
-            frenchFries.setItemID(22222);
-            frenchFries.setItemName("French fries");
-            frenchFries.setItemQuantity(5);
-
-            cart.addToCart(frenchFries);
-
-            cout << endl << "Cart before removal:" << endl;
-            cart.displayCart();
-
-        cout << endl << "Cart after removal:" << endl;
-        cart.removeFromCart("Bob");
-        cart.displayCart();
-
+    
         return 0;
+    }
+    case 3:
+    {
+        Analytics analytics(fileName);
+        analytics.runAnalytics();
+
+    }
+    case 4:
+    {
+        OrderQueue orderQueue(fileName);
+        orderQueue.run();
     }
 }
 }
