@@ -27,16 +27,18 @@ void OrderDatabase::formatOrder(int orderNumber, const std::string& date, const 
     currentOrderData.push_back(ss.str());
 }
 
-void OrderDatabase::addOrder(int orderNumber, const std::string &date, const std::string &orderName, const std::vector<std::tuple<int, std::string, int>> &items, const std::string &specialRequest, float totalPrice)
+//addOrder() with name and price
+void OrderDatabase::addOrder(int orderNumber, const std::string &date, const std::vector<std::tuple<int, std::string, int>> &items, const std::string &specialRequest, const std::string &orderName, float totalPrice)
 {
-    formatOrder(orderNumber, date, orderName, items, specialRequest, totalPrice);
+    formatOrder(orderNumber, date, items, specialRequest, orderName, totalPrice);
     saveOrderToCSV();
 }
 
-void OrderDatabase::formatOrder(int orderNumber, const std::string &date, const std::string &orderName, const std::vector<std::tuple<int, std::string, int>> &items, const std::string &specialRequest, float totalPrice)
+//formatOrder() with name and price
+void OrderDatabase::formatOrder(int orderNumber, const std::string &date, const std::vector<std::tuple<int, std::string, int>> &items, const std::string &specialRequest, const std::string &orderName, float totalPrice)
 {
     std::stringstream ss;
-    ss << orderNumber << "," << date << "," << orderName;
+    ss << orderNumber << "," << date;
 
     // For each item in the order, append its details to the CSV string
     for (const auto& item : items) {
@@ -44,7 +46,7 @@ void OrderDatabase::formatOrder(int orderNumber, const std::string &date, const 
     }
 
     // Add the special request
-    ss << "," << specialRequest << "," << totalPrice;
+    ss << "," << specialRequest << "," << orderName << "," << totalPrice;
 
     // Store the formatted order in the vector for later use
     currentOrderData.push_back(ss.str());

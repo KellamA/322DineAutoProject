@@ -90,7 +90,7 @@ int main() {
     int orderNum = (rand() % 20)+1;
     string orderName = cart.getOrderName();
     float totalPrice = cart.getTotalPrice();
-    orderDB.addOrder(orderNum, date, name, items1, specialRequest, totalPrice); 
+    orderDB.addOrder(orderNum, date, items1, specialRequest, name, totalPrice); 
 
     std::cout << "Order has been added to the database.\n";
     break; // Make sure to include a break statement if needed
