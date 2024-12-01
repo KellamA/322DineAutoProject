@@ -10,6 +10,7 @@
 #include <algorithm>   // For std::max_element
 #include <ctime>       // For time and date handling
 #include <iomanip>     // For std::get_time (date parsing)
+#include <cstdlib>     // For rand()
 
 
 #include "orderDataBase.hpp"
@@ -35,6 +36,8 @@ int main() {
 
     string name;
 
+    srand((unsigned int)time(NULL));
+
     switch(logIn){
     case 1: {       
         std::string filename = "../menu.csv"; // if debugging it needs to be menu.csv, if running build it needs to be ../menu.csv
@@ -43,6 +46,9 @@ int main() {
     vector<menu> Menu = m.getMenu(filename);
     std::vector<std::tuple<int, std::string, int>> items1;
     
+    cout << "Enter your name: ";
+    cin >> name;
+
     if(!Menu.empty())
     {
         m.displayItem(Menu);
@@ -60,6 +66,11 @@ int main() {
         cout << "Menu is empty or file not found." << endl;
         break;
     }
+
+    shoppingCart cart = m.getCart();
+    cart.setOrderName(name);
+    cart.displayCart();
+    cart.verifyPayment();
     
     // Get the current date in YYYY-MM-DD format automatically
     std::time_t t = std::time(nullptr);
@@ -68,11 +79,18 @@ int main() {
     dateStream << std::put_time(now, "%Y-%m-%d");
     date = dateStream.str(); // Store the current date in 'date'
     
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::cout << "Enter any special requests (or leave blank if none): ";
     std::getline(std::cin, specialRequest);
 
     // Add the order to the database
-    orderDB.addOrder(5, date, items1, specialRequest);
+   /*  int orderNum = (rand() % 20)+1;
+    orderDB.addOrder(orderNum, date, items1, specialRequest); */
+
+    int orderNum = (rand() % 20)+1;
+    string orderName = cart.getOrderName();
+    float totalPrice = cart.getTotalPrice();
+    orderDB.addOrder(orderNum, date, name, items1, specialRequest, totalPrice); 
 
     std::cout << "Order has been added to the database.\n";
     break; // Make sure to include a break statement if needed

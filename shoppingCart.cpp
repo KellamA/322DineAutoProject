@@ -50,14 +50,20 @@ void shoppingCart::addToCart(const tuple<int, string, int>& newItem)
     this->tupleCart.push_back(newItem);
 }
 
-void shoppingCart::displayTotalPrice()
+float shoppingCart::getTotalPrice()
 {
     float totalPrice = 0.0;
     for (const auto& item : cart)
     {
         totalPrice += item.getItemPrice();
     }
+    return totalPrice;
+}
 
+void shoppingCart::displayTotalPrice()
+{
+    
+    float totalPrice = getTotalPrice();
     cout << "The total price of " << this->orderName << "'s shopping cart is: $" << totalPrice << endl;
 }
 
@@ -146,4 +152,8 @@ void shoppingCart::verifyPayment()
     
 }
 
-
+shoppingCart &shoppingCart::operator=(const shoppingCart &rhs)
+{
+    cart = rhs.cart;
+    return *this;
+}

@@ -5,7 +5,7 @@
 #include <vector>
 #include <fstream>
 #include <sstream>
-#include "menuItem.hpp"
+#include "shoppingCart.hpp"
 
 using namespace std;
 
@@ -16,12 +16,14 @@ public:
    vector<menu> getMenu(const std::string& menuFile);
    std::vector<std::tuple<int, std::string, int>> menuSelect(const vector<menu>& menu);
 
-   
+   shoppingCart getCart();
 
 private:
    int id;
    std::string itemName;
    float price;
+
+   shoppingCart mCart;
 
 };
 

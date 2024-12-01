@@ -16,10 +16,17 @@ public:
     void saveOrderToCSV();
     std::vector<std::string> readOrders();
 
+    // Adding a new addOrder() -Shian
+    void addOrder(int orderNumber, const std::string& date, const std::string& orderName, const std::vector<std::tuple<int, std::string, int>>& items, const std::string& specialRequest, float totalPrice);
+
+
 private:
     std::string fileName;
     std::vector<std::string> currentOrderData;
     void formatOrder(int orderNumber, const std::string& date, const std::vector<std::tuple<int, std::string, int>>& items, const std::string& specialRequest);
+    
+    // Adding a new formatOrder() -Shian
+    void formatOrder(int orderNumber, const std::string& date, const std::string& orderName, const std::vector<std::tuple<int, std::string, int>>& items, const std::string& specialRequest, float totalPrice);
 };
 
 #endif

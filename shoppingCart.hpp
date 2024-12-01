@@ -1,3 +1,6 @@
+#ifndef SHOPPINGCART_HPP 
+#define SHOPPINGCART_HPP
+
 #include "menuItem.hpp"
 #include <vector>
 
@@ -11,6 +14,7 @@ public:
     void removeFromCart(const string& itemToRemove);
     void displayCart();
     void addToCart(const tuple<int,string,int>& newItem);
+    float getTotalPrice();
     void displayTotalPrice();
 
     void setOrderName(string newOrderName);
@@ -19,6 +23,8 @@ public:
     //void readCreditCards(ifstream cardFile, vector<string>& cards);
     void verifyPayment();
 
+    shoppingCart& operator=(const shoppingCart &rhs);
+
 private:
     vector<menuItem> cart;
     vector<tuple<int, string, int>> tupleCart;
@@ -26,3 +32,4 @@ private:
 
 };
 
+#endif 

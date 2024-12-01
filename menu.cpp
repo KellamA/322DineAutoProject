@@ -60,12 +60,13 @@ std::vector<std::tuple<int, std::string, int>> menu::menuSelect(const vector<men
     menuItem mess;
 
     // Shian's variables
-    string name;
+    //string name;
 
     // Adding some stuff -Shian
-    cout << "Enter your name: ";
+    /* cout << "Enter your name: ";
     cin >> name;
-    shoppingCart cart(name);
+    shoppingCart cart(name); */
+
     std::vector<std::tuple<int, std::string, int>> idk;
 
 
@@ -87,7 +88,7 @@ std::vector<std::tuple<int, std::string, int>> menu::menuSelect(const vector<men
 
                 menuItem it(choice, item.itemName, quantity, (item.price*quantity));
                 mess = it;
-                cart.addToCart(it);
+                this->mCart.addToCart(it);
                 
                 // Changing stuff -Shian
                 std::tuple<int, std::string, int> p = mess.convertToTuple();
@@ -122,10 +123,15 @@ std::vector<std::tuple<int, std::string, int>> menu::menuSelect(const vector<men
         }
     } while (More == true || found == false);
     
-    cart.displayCart();
-    cart.verifyPayment();
+    /* this->mCart.displayCart();
+    this->mCart.verifyPayment(); */
     /* std::tuple<int, std::string, int> p = mess.convertToTuple();
     std::vector<std::tuple<int, std::string, int>> idk;
     idk.push_back(p); */
     return idk;
+}
+
+shoppingCart menu::getCart()
+{
+    return this->mCart;
 }

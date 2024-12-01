@@ -249,6 +249,30 @@ orderDataBase.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/orderDataBase.cpp.s
 .PHONY : orderDataBase.cpp.s
 
+queue.o: queue.cpp.o
+.PHONY : queue.o
+
+# target to build an object file
+queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/queue.cpp.o
+.PHONY : queue.cpp.o
+
+queue.i: queue.cpp.i
+.PHONY : queue.i
+
+# target to preprocess a source file
+queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/queue.cpp.i
+.PHONY : queue.cpp.i
+
+queue.s: queue.cpp.s
+.PHONY : queue.s
+
+# target to generate assembly for a file
+queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DineAutoProgram.dir/build.make CMakeFiles/DineAutoProgram.dir/queue.cpp.s
+.PHONY : queue.cpp.s
+
 shoppingCart.o: shoppingCart.cpp.o
 .PHONY : shoppingCart.o
 
@@ -297,6 +321,9 @@ help:
 	@echo "... orderDataBase.o"
 	@echo "... orderDataBase.i"
 	@echo "... orderDataBase.s"
+	@echo "... queue.o"
+	@echo "... queue.i"
+	@echo "... queue.s"
 	@echo "... shoppingCart.o"
 	@echo "... shoppingCart.i"
 	@echo "... shoppingCart.s"
