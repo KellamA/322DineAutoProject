@@ -169,12 +169,13 @@ int main() {
     {
         Analytics analytics(fileName);
         analytics.runAnalytics();
-
-    }
+        break;
+    }   
     case 4:
     {
         OrderQueue orderQueue(fileName);
         orderQueue.run();
+        break;
     }
 }
 }
