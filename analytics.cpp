@@ -34,6 +34,10 @@ void Analytics::loadOrders() {
         int orderNumber = std::stoi(fields[index++]);
         std::tm date = parseDate(fields[index++]);
 
+        // Adding stuff -Shian
+        std::string orderName = fields[index++];
+        float totalPrice = std::stof(fields[index++]);
+
         // Parse items
         std::vector<std::tuple<int, int>> items;
         try {
