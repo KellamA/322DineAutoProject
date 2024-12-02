@@ -5,6 +5,9 @@
 7,2024-11-29,4,fries,4,2,burger,3,
 69,2024-11-29,4,fries,4,2,burger,3,
 70,2024-11-29,4,fries,4,2,burger,3,5,2024-11-30,1,cheeseburger,5,2,burger,11,
-4,2024-11-30,1,cheeseburger,5,2,burger,3,no cheese,Jeff,23.25
-6,2024-11-30,3,krabbypatty,12,no dairy,Bob,37.2
-14,2024-11-30,5,coffee,12,4,fries,54,2,burger,2,,Steve,45.7
+19,2024-11-30,1,cheeseburger,2,2,burger,2,no cheese,11.5,Jeff
+7,2024-11-30,2,burger,2,3,krabbypatty,3,4,fries,4,no meat,16.8,Bob
+20,2024-11-30,5,coffee,54,extra cream,59.4,Bill
+4,2024-12-01,Jeffrey,15,1,cheeseburger,5,no cow
+16,2024-12-01,Cob,16.5,3,krabbypatty,5,4,fries,2,no corn
+1,2024-12-01,Gary,37.85,5,coffee,15,2,burger,1,3,krabbypatty,6,extra cheese

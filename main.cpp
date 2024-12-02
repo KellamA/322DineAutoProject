@@ -79,7 +79,8 @@ int main() {
     dateStream << std::put_time(now, "%Y-%m-%d");
     date = dateStream.str(); // Store the current date in 'date'
     
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    //std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    std::cin.ignore();
     std::cout << "Enter any special requests (or leave blank if none): ";
     std::getline(std::cin, specialRequest);
 
@@ -90,7 +91,7 @@ int main() {
     int orderNum = (rand() % 20)+1;
     string orderName = cart.getOrderName();
     float totalPrice = cart.getTotalPrice();
-    orderDB.addOrder(orderNum, date, items1, specialRequest, name, totalPrice); 
+    orderDB.addOrder(orderNum, date, name, totalPrice, items1, specialRequest); 
 
     std::cout << "Order has been added to the database.\n";
     break; // Make sure to include a break statement if needed

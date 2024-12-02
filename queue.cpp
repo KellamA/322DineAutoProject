@@ -67,6 +67,10 @@ void OrderQueue::loadOrders() {
             }
         }
 
+        // Parse name and price
+        std::string orderName = fields[index++];
+        float totalPrice = std::stof(fields[index++]);
+
         // Parse items
         std::vector<std::tuple<int, std::string, int>> items;
         while (index + 2 < fields.size()) {
@@ -101,6 +105,8 @@ void OrderQueue::loadOrders() {
         Order order;
         order.orderNumber = orderNumber;
         order.date = date;
+        order.orderName = orderName;
+        order.totalPrice = totalPrice;
         order.items = items;
         order.specialRequest = specialRequest;
 
@@ -143,6 +149,10 @@ void OrderQueue::displayOrders() {
             for (const auto& item : order.items) {
                 totalItems += std::get<2>(item);
             }
+            if (!order.orderName.empty()) {
+                std::cout << "Order Name: " << order.orderName << "\n";
+            }
+            std::cout << "Total Price: $" << order.totalPrice << "\n";
             std::cout << "Total Items: " << totalItems << "\n";
             std::cout << "Items:\n";
             for (const auto& item : order.items) {

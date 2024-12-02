@@ -80,7 +80,7 @@ std::vector<std::tuple<int, std::string, int>> menu::menuSelect(const vector<men
         {
             if (item.id == choice)
             {
-                cout << "how many would you like? " << endl;
+                cout << "How many would you like? " << endl;
                 cin >> quantity;
 
                 cout << "You selected: " << quantity << " " << item.itemName << " - $" << item.price << endl;

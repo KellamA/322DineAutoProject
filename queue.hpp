@@ -21,8 +21,11 @@ private:
     struct Order {
         int orderNumber;
         std::string date;
+        std::string orderName;
+        float totalPrice;
         std::vector<std::tuple<int, std::string, int>> items; // ItemID, ItemName, Quantity
         std::string specialRequest;
+        
     };
 
     std::vector<Order> orders;
