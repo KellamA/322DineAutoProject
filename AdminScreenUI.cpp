@@ -3,6 +3,7 @@
 #include "LoginScreenUI.h"
 #include <QMessageBox>
 #include <QInputDialog>
+#include <QTimer>
 
 QString formatItems(const std::vector<std::tuple<int, std::string, int>>& items) {
     QString formattedItems;
@@ -30,6 +31,11 @@ AdminScreenUI::AdminScreenUI(QWidget *parent, const std::string &ordersFile)
     connect(ui->clearOrderButton, &QPushButton::clicked, this, &AdminScreenUI::onClearOrderButtonClicked);
     connect(ui->logOutButton, &QPushButton::clicked, this, &AdminScreenUI::onLogOutButtonClicked);
     // Refresh orders on load
+
+    QTimer *refreshTimer = new QTimer(this);
+    connect(refreshTimer, &QTimer::timeout, this, &AdminScreenUI::refreshOrders);
+    refreshTimer->start(15000);
+
     refreshOrders();
 }
 
