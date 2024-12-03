@@ -1,0 +1,3 @@
+/home/shianwen123/DineAuto/322DineAutoProject/ShianBuild/CMakeFiles/DineAutoProgram.dir
+/home/shianwen123/DineAuto/322DineAutoProject/ShianBuild/CMakeFiles/edit_cache.dir
+/home/shianwen123/DineAuto/322DineAutoProject/ShianBuild/CMakeFiles/rebuild_cache.dir
