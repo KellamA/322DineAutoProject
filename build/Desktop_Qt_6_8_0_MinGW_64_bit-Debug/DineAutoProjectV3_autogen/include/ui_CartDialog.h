@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTableWidget>
 
@@ -24,21 +25,25 @@ public:
     QTableWidget *cartTable;
     QPushButton *removeItemButton;
     QPushButton *closeButton;
+    QLabel *totalPriceLabel;
 
     void setupUi(QDialog *CartDialog)
     {
         if (CartDialog->objectName().isEmpty())
             CartDialog->setObjectName("CartDialog");
-        CartDialog->resize(492, 389);
+        CartDialog->resize(787, 443);
         cartTable = new QTableWidget(CartDialog);
         cartTable->setObjectName("cartTable");
-        cartTable->setGeometry(QRect(120, 20, 256, 192));
+        cartTable->setGeometry(QRect(120, 60, 491, 192));
         removeItemButton = new QPushButton(CartDialog);
         removeItemButton->setObjectName("removeItemButton");
-        removeItemButton->setGeometry(QRect(132, 270, 101, 29));
+        removeItemButton->setGeometry(QRect(232, 310, 101, 29));
         closeButton = new QPushButton(CartDialog);
         closeButton->setObjectName("closeButton");
-        closeButton->setGeometry(QRect(280, 270, 93, 29));
+        closeButton->setGeometry(QRect(380, 310, 93, 29));
+        totalPriceLabel = new QLabel(CartDialog);
+        totalPriceLabel->setObjectName("totalPriceLabel");
+        totalPriceLabel->setGeometry(QRect(290, 260, 121, 20));
 
         retranslateUi(CartDialog);
 
@@ -50,6 +55,7 @@ public:
         CartDialog->setWindowTitle(QCoreApplication::translate("CartDialog", "Dialog", nullptr));
         removeItemButton->setText(QCoreApplication::translate("CartDialog", "Remove Item", nullptr));
         closeButton->setText(QCoreApplication::translate("CartDialog", "Close", nullptr));
+        totalPriceLabel->setText(QCoreApplication::translate("CartDialog", "TextLabel", nullptr));
     } // retranslateUi
 
 };

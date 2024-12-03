@@ -296,6 +296,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/AdminScreenUI.h",
+			"MU",
+			"EWIEGA46WW/moc_AdminScreenUI.cpp",
+			null
+		],
+		[
 			"C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/CartDialog.h",
 			"MU",
 			"EWIEGA46WW/moc_CartDialog.cpp",
@@ -335,6 +341,12 @@
 			"C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/Temp/orderDataBase.hpp",
 			"MU",
 			"XWDRRAYTB3/moc_orderDataBase.cpp",
+			null
+		],
+		[
+			"C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/Temp/queue.hpp",
+			"MU",
+			"XWDRRAYTB3/moc_queue.cpp",
 			null
 		],
 		[
@@ -422,6 +434,11 @@
 	"SOURCES" : 
 	[
 		[
+			"C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/AdminScreenUI.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/CartDialog.cpp",
 			"MU",
 			null
@@ -453,6 +470,11 @@
 		],
 		[
 			"C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/Temp/orderDataBase.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Starm/QtCreator Projects/DineAutoProjectV3/Temp/queue.cpp",
 			"MU",
 			null
 		],

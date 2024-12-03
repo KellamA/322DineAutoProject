@@ -19,7 +19,7 @@ private slots:
 
 private:
     Ui::LoginScreenUI *ui;
-    bool validateCredentials(const QString &username, const QString &password);
+    bool validateCredentials(const QString &username, const QString &password, QString &role);
 };
 
 #endif // LOGINSCREENUI_H

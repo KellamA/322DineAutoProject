@@ -1,6 +1,7 @@
 #include "LoginScreenUI.h"
 #include "ui_LoginScreenUI.h"
 #include "MenuScreenUI.h"
+#include "AdminScreenUI.h"
 #include <QFile>
 #include <QTextStream>
 #include <QMessageBox>
@@ -24,22 +25,32 @@ void LoginScreenUI::onLoginButtonClicked() {
     QString username = ui->usernameEdit->text();
     QString password = ui->passwordEdit->text();
 
-    if (validateCredentials(username, password)) {
-        QMessageBox::information(this, "Login Successful", "Welcome!");
+    QString role;
 
-        std::string ordersFile = "orders.csv"; // Ensure this path matches your setup
-        OrderDatabase *orderDB = new OrderDatabase(ordersFile);
-
-        MenuScreenUI *menuScreen = new MenuScreenUI(nullptr, orderDB);
+    if (validateCredentials(username, password, role)) {
+        QMessageBox::information(this, "Login Successful", "Welcome, " + username + "!");
         this->close(); // Close the login screen
-        menuScreen->exec();
+
+        std::string ordersFile = "orders.csv"; // Path to orders file
+
+        if (role == "admin") {
+            // Admin flow
+            AdminScreenUI adminScreen; // Create and display Admin screen
+            adminScreen.exec();
+        } else {
+            // Customer flow
+            auto orderDB = std::make_shared<OrderDatabase>(ordersFile);
+            MenuScreenUI menuScreen(nullptr, orderDB.get());
+            menuScreen.exec();
+        }
+
     } else {
         QMessageBox::warning(this, "Login Failed", "Incorrect username or password.");
     }
 }
 
 
-bool LoginScreenUI::validateCredentials(const QString &username, const QString &password) {
+bool LoginScreenUI::validateCredentials(const QString &username, const QString &password, QString &role) {
     QFile file("credentials.csv");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         QMessageBox::critical(this, "Error", "Unable to open credentials file.");
@@ -50,10 +61,12 @@ bool LoginScreenUI::validateCredentials(const QString &username, const QString &
     while (!in.atEnd()) {
         QString line = in.readLine();
         QStringList fields = line.split(",");
-        if (fields.size() == 2) {
+        if (fields.size() == 3) { // Expect username, password, and role
             QString fileUsername = fields.at(0).trimmed();
             QString filePassword = fields.at(1).trimmed();
+            QString fileRole = fields.at(2).trimmed();
             if (username == fileUsername && password == filePassword) {
+                role = fileRole; // Set the role for further processing
                 return true; // Credentials match
             }
         }

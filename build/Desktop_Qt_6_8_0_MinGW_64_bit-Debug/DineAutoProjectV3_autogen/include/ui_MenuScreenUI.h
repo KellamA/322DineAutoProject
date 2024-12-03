@@ -33,13 +33,13 @@ public:
         MenuScreenUI->resize(496, 393);
         listWidget = new QListWidget(MenuScreenUI);
         listWidget->setObjectName("listWidget");
-        listWidget->setGeometry(QRect(140, 120, 256, 192));
+        listWidget->setGeometry(QRect(120, 90, 256, 192));
         addToCartButton = new QPushButton(MenuScreenUI);
         addToCartButton->setObjectName("addToCartButton");
-        addToCartButton->setGeometry(QRect(110, 340, 93, 29));
+        addToCartButton->setGeometry(QRect(100, 320, 93, 29));
         toCheckoutButton = new QPushButton(MenuScreenUI);
         toCheckoutButton->setObjectName("toCheckoutButton");
-        toCheckoutButton->setGeometry(QRect(280, 340, 151, 29));
+        toCheckoutButton->setGeometry(QRect(260, 320, 151, 29));
         logOutButton = new QPushButton(MenuScreenUI);
         logOutButton->setObjectName("logOutButton");
         logOutButton->setGeometry(QRect(380, 20, 93, 29));

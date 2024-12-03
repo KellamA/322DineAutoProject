@@ -16,6 +16,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTextEdit>
 
 QT_BEGIN_NAMESPACE
 
@@ -27,27 +28,47 @@ public:
     QLineEdit *creditCardLineEdit;
     QPushButton *confirmButton;
     QPushButton *cancelButton;
+    QLabel *label;
+    QLabel *label_2;
+    QLineEdit *nameLine;
+    QLabel *label_3;
+    QTextEdit *specialRequestLineEdit;
 
     void setupUi(QDialog *CheckoutDialog)
     {
         if (CheckoutDialog->objectName().isEmpty())
             CheckoutDialog->setObjectName("CheckoutDialog");
-        CheckoutDialog->resize(533, 395);
+        CheckoutDialog->resize(658, 468);
         cartSummaryList = new QListWidget(CheckoutDialog);
         cartSummaryList->setObjectName("cartSummaryList");
-        cartSummaryList->setGeometry(QRect(130, 20, 256, 192));
+        cartSummaryList->setGeometry(QRect(180, 20, 251, 251));
         totalPriceLabel = new QLabel(CheckoutDialog);
         totalPriceLabel->setObjectName("totalPriceLabel");
-        totalPriceLabel->setGeometry(QRect(230, 220, 63, 20));
+        totalPriceLabel->setGeometry(QRect(260, 270, 101, 20));
         creditCardLineEdit = new QLineEdit(CheckoutDialog);
         creditCardLineEdit->setObjectName("creditCardLineEdit");
-        creditCardLineEdit->setGeometry(QRect(100, 260, 113, 26));
+        creditCardLineEdit->setGeometry(QRect(130, 300, 113, 26));
         confirmButton = new QPushButton(CheckoutDialog);
         confirmButton->setObjectName("confirmButton");
-        confirmButton->setGeometry(QRect(180, 310, 93, 29));
+        confirmButton->setGeometry(QRect(200, 390, 93, 29));
         cancelButton = new QPushButton(CheckoutDialog);
         cancelButton->setObjectName("cancelButton");
-        cancelButton->setGeometry(QRect(310, 310, 93, 29));
+        cancelButton->setGeometry(QRect(330, 390, 93, 29));
+        label = new QLabel(CheckoutDialog);
+        label->setObjectName("label");
+        label->setGeometry(QRect(30, 300, 101, 20));
+        label_2 = new QLabel(CheckoutDialog);
+        label_2->setObjectName("label_2");
+        label_2->setGeometry(QRect(320, 300, 131, 20));
+        nameLine = new QLineEdit(CheckoutDialog);
+        nameLine->setObjectName("nameLine");
+        nameLine->setGeometry(QRect(460, 300, 113, 26));
+        label_3 = new QLabel(CheckoutDialog);
+        label_3->setObjectName("label_3");
+        label_3->setGeometry(QRect(480, 60, 121, 20));
+        specialRequestLineEdit = new QTextEdit(CheckoutDialog);
+        specialRequestLineEdit->setObjectName("specialRequestLineEdit");
+        specialRequestLineEdit->setGeometry(QRect(470, 90, 141, 101));
 
         retranslateUi(CheckoutDialog);
 
@@ -60,6 +81,9 @@ public:
         totalPriceLabel->setText(QCoreApplication::translate("CheckoutDialog", "TextLabel", nullptr));
         confirmButton->setText(QCoreApplication::translate("CheckoutDialog", "Confirm", nullptr));
         cancelButton->setText(QCoreApplication::translate("CheckoutDialog", "Cancel", nullptr));
+        label->setText(QCoreApplication::translate("CheckoutDialog", "Card Number", nullptr));
+        label_2->setText(QCoreApplication::translate("CheckoutDialog", "Name for the order", nullptr));
+        label_3->setText(QCoreApplication::translate("CheckoutDialog", "Special Requests", nullptr));
     } // retranslateUi
 
 };

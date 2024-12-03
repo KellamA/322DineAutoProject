@@ -30,6 +30,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Temp/creditCards.txt Temp/menu.cpp Temp/menu.csv Temp/menu.hpp Temp/menuItem.cpp Temp/menuItem.hpp Temp/orderDataBase.cpp Temp/orderDataBase.hpp Temp/orders.csv Temp/shoppingCart.cpp Temp/shoppingCart.hpp
         CartDialog.h CartDialog.cpp CartDialog.ui
         CheckoutDialog.h CheckoutDialog.cpp CheckoutDialog.ui
+        AdminScreenUI.h AdminScreenUI.cpp AdminScreenUI.ui
+        Temp/queue.cpp Temp/queue.hpp
 
 
 

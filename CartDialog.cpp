@@ -11,7 +11,7 @@ CartDialog::CartDialog(QWidget *parent, shoppingCart *cart) :
 
     // Set up the QTableWidget
     ui->cartTable->setColumnCount(3);
-    ui->cartTable->setHorizontalHeaderLabels({"Item Name", "Quantity", "Total Price"});
+    ui->cartTable->setHorizontalHeaderLabels({"Item Name", "Quantity", "Price"});
     ui->cartTable->horizontalHeader()->setStretchLastSection(true);
 
     // Populate the cart items
@@ -39,8 +39,11 @@ void CartDialog::populateCart() {
             ui->cartTable->setItem(i, 0, new QTableWidgetItem(QString::fromStdString(item.getItemName())));
             ui->cartTable->setItem(i, 1, new QTableWidgetItem(QString::number(item.getItemQuantity())));
             ui->cartTable->setItem(i, 2, new QTableWidgetItem(QString::number(item.getItemPrice())));
+
+
         }
     }
+    calculateTotalPrice();
 }
 
 void CartDialog::onRemoveItemButtonClicked() {
@@ -51,6 +54,7 @@ void CartDialog::onRemoveItemButtonClicked() {
         cart->removeFromCart(itemName.toStdString());
         ui->cartTable->removeRow(row);  // Remove the row from the table
         QMessageBox::information(this, "Item Removed", itemName + " has been removed from your cart.");
+        calculateTotalPrice();
     } else {
         QMessageBox::warning(this, "No Selection", "Please select an item to remove.");
     }
@@ -59,3 +63,13 @@ void CartDialog::onRemoveItemButtonClicked() {
 void CartDialog::onCloseButtonClicked() {
     this->close();  // Close the dialog
 }
+
+void CartDialog::calculateTotalPrice() {
+    if (cart) {
+        float totalPrice = cart->calculateTotalPrice(); // Assuming shoppingCart has this method
+        ui->totalPriceLabel->setText(QString("Total Price: $%1").arg(totalPrice, 0, 'f', 2));
+    } else {
+        ui->totalPriceLabel->setText("Total Price: $0.00");
+    }
+}
+

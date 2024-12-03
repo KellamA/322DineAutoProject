@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>492</width>
-    <height>389</height>
+    <width>787</width>
+    <height>443</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>20</y>
-     <width>256</width>
+     <y>60</y>
+     <width>491</width>
      <height>192</height>
     </rect>
    </property>
@@ -26,8 +26,8 @@
   <widget class="QPushButton" name="removeItemButton">
    <property name="geometry">
     <rect>
-     <x>132</x>
-     <y>270</y>
+     <x>232</x>
+     <y>310</y>
      <width>101</width>
      <height>29</height>
     </rect>
@@ -39,14 +39,27 @@
   <widget class="QPushButton" name="closeButton">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>270</y>
+     <x>380</x>
+     <y>310</y>
      <width>93</width>
      <height>29</height>
     </rect>
    </property>
    <property name="text">
     <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="totalPriceLabel">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>260</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
    </property>
   </widget>
  </widget>

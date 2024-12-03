@@ -439,6 +439,7 @@ DineAutoProjectV3_autogen/timestamp: \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
+	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_mutex.h \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
@@ -465,6 +466,7 @@ DineAutoProjectV3_autogen/timestamp: \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_lock.h \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
@@ -479,6 +481,7 @@ DineAutoProjectV3_autogen/timestamp: \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
+	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/condition_variable \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
@@ -509,6 +512,7 @@ DineAutoProjectV3_autogen/timestamp: \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
+	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/mutex \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numeric \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/optional \
@@ -599,6 +603,8 @@ DineAutoProjectV3_autogen/timestamp: \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Users/Starm/QTFramework/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
+	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/AdminScreenUI.cpp \
+	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/AdminScreenUI.h \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/CMakeLists.txt \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/CartDialog.cpp \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/CartDialog.h \
@@ -614,6 +620,8 @@ DineAutoProjectV3_autogen/timestamp: \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/Temp/menuItem.hpp \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/Temp/orderDataBase.cpp \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/Temp/orderDataBase.hpp \
+	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/Temp/queue.cpp \
+	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/Temp/queue.hpp \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/Temp/shoppingCart.cpp \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/Temp/shoppingCart.hpp \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
@@ -623,6 +631,7 @@ DineAutoProjectV3_autogen/timestamp: \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/DineAutoProjectV3_autogen/moc_predefs.h \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/main.cpp \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/main.h \
+	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/AdminScreenUI.ui \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/CartDialog.ui \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/CheckoutDialog.ui \
 	C:/Users/Starm/QtCreator\ Projects/DineAutoProjectV3/LoginScreenUI.ui \

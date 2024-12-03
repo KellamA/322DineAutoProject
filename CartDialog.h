@@ -24,6 +24,7 @@ private slots:
 private:
     Ui::CartDialog *ui;
     shoppingCart *cart;  // Pointer to the shopping cart
+    void calculateTotalPrice();
 };
 
 #endif // CARTDIALOG_H

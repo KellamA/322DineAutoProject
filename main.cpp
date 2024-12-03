@@ -6,19 +6,29 @@
 #include "Temp/orderDataBase.hpp"
 #include "MenuScreenUI.h"
 #include "main.h"
+#include <memory>
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
+    while (true) {
+        LoginScreenUI loginScreen;
+        if (loginScreen.exec() != QDialog::Accepted) {
+            break;  // Exit the loop if login fails or is canceled
+        }
 
+        std::string ordersFile = "orders.csv";
+        auto orderDB = std::make_shared<OrderDatabase>(ordersFile);
 
-    LoginScreenUI loginScreen;
-    if (loginScreen.exec() == QDialog::Accepted) {
-
+        MenuScreenUI menuScreen(nullptr, orderDB.get());
+        if (menuScreen.exec() != QDialog::Accepted) {
+            continue;  // Loop back to login screen on logout
+        }
     }
 
-    cout << "return in main hit" << endl;
-    return app.exec();
+    return 0;
+
+
 }
 Main::Main(QWidget *parent) : QWidget(parent) {
     // Constructor implementation

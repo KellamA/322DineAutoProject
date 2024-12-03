@@ -3,6 +3,7 @@
 #include "Temp/menu.hpp"
 #include "CartDialog.h"
 #include "CheckoutDialog.h"
+#include "LoginScreenUI.h"
 #include "main.h"
 #include <QFile>
 #include <QTextStream>
@@ -45,10 +46,14 @@ void MenuScreenUI::loadMenuItems() {
         return;
     }
 
-    // Populate the QListWidget with menu items
     for (const auto& item : menuItems) {
-        QString itemText = QString::fromStdString(item.getItemName()) + " - $" + QString::number(item.getPrice());
+        QString itemText = QString("%1 | %2 - $%3")
+            .arg(item.getId())  // Add the Item ID
+            .arg(QString::fromStdString(item.getItemName()))  // Item Name
+            .arg(item.getPrice(), 0, 'f', 2);  // Price
+
         QListWidgetItem *listItem = new QListWidgetItem(itemText);
+        listItem->setData(Qt::UserRole, item.getId());  // Store Item ID in the list item's data
         ui->listWidget->addItem(listItem);
     }
 }
@@ -57,31 +62,53 @@ void MenuScreenUI::onAddToCartButtonClicked() {
     QListWidgetItem *selectedItem = ui->listWidget->currentItem();
     if (selectedItem) {
         QString itemText = selectedItem->text();
-        QStringList itemDetails = itemText.split(" - $");
+        qDebug() << "Selected Item Text:" << itemText;
 
-        if (itemDetails.size() == 2) {
-            QString itemName = itemDetails[0].trimmed();
-            float itemPrice = itemDetails[1].toFloat();
-
-            // Prompt for quantity
-            bool ok;
-            int quantity = QInputDialog::getInt(this, "Enter Quantity", "Quantity:", 1, 1, 100, 1, &ok);
-            if (!ok) return;
-
-            // Prompt for special request
-            QString specialRequest = QInputDialog::getText(this, "Special Request", "Enter any special request (leave blank if none):", QLineEdit::Normal, "", &ok);
-            if (!ok) return;
-
-            // Create a menuItem object with the special request
-            menuItem newItem(0, itemName.toStdString(), quantity, itemPrice * quantity, specialRequest.toStdString());
-            cart.addToCart(newItem);
-
-            QMessageBox::information(this, "Item Added", "Added " + QString::number(quantity) + " " + itemName + " to your cart.");
+        // Split by " | " to separate Item ID and the rest
+        QStringList mainSplit = itemText.split(" | ");
+        if (mainSplit.size() < 2) {
+            QMessageBox::warning(this, "Error", "Failed to parse item details. Ensure the format is correct.");
+            return;
         }
+
+        QString itemIdText = mainSplit[0].trimmed(); // Extract Item ID as a string
+        QString nameAndPrice = mainSplit[1].trimmed(); // Extract "ItemName - $Price"
+
+        // Split by " - $" to separate Item Name and Price
+        QStringList namePriceSplit = nameAndPrice.split(" - $");
+        if (namePriceSplit.size() < 2) {
+            QMessageBox::warning(this, "Error", "Failed to parse item name and price. Ensure the format is correct.");
+            return;
+        }
+
+        QString itemName = namePriceSplit[0].trimmed(); // Extract Item Name
+        float itemPrice = namePriceSplit[1].toFloat();  // Extract Item Price
+
+        // Convert Item ID to an integer
+        bool ok;
+        int itemID = itemIdText.toInt(&ok);
+        if (!ok) {
+            QMessageBox::warning(this, "Error", "Invalid Item ID format.");
+            return;
+        }
+
+        // Prompt for quantity
+        int quantity = QInputDialog::getInt(this, "Enter Quantity", "Quantity:", 1, 1, 100, 1, &ok);
+        if (!ok) return;
+
+        // Create a menuItem object
+        menuItem newItem(itemID, itemName.toStdString(), quantity, itemPrice * quantity);
+        cart.addToCart(newItem);
+
+        QMessageBox::information(this, "Item Added", "Added " + QString::number(quantity) + " " + itemName + " to your cart.");
     } else {
         QMessageBox::warning(this, "No Selection", "Please select an item to add to the cart.");
     }
 }
+
+
+
+
 
 void MenuScreenUI::onSeeCartButtonClicked() {
     CartDialog cartDialog(this, &cart);
@@ -128,25 +155,12 @@ void MenuScreenUI::onToCheckoutButtonClicked() {
 }
 
 void MenuScreenUI::onLogOutButtonClicked() {
-    // Handle logging out
     QMessageBox::information(this, "Log Out", "Logging out...");
+    this->close();
 
-  //  cout << "before QFile: " << endl;
-  //  QFile::copy("../DineAutoProjectV3/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/orders.csv", "../DineAutoProjectV3/Temp/orders.csv");
-  //  cout <<"After QFile. And closing: " << endl;
-
-    //Main thing;
-
-    //std::string buildDirOrders = "orders.csv";
-    //std::string tempDirOrders = "Temp/orders.csv";
-    //if (thing.copyFileContents(buildDirOrders, tempDirOrders)) {
-    //    std::cout << "Orders file synced successfully!" << std::endl;
-    //} else {
-    //    std::cerr << "Failed to sync orders file!" << std::endl;
-    //}
-    cout << "Logging out" << endl;
-    close();  // Close the menu screen
-    cout << "Logged out" << endl;
-    QApplication::quit();
-    cout << "Application closed" << endl;
+    LoginScreenUI loginScreen; // Reopen the login screen
+    if (loginScreen.exec() == QDialog::Accepted) {
+        // Reopen the menu screen if login is successful
+        this->exec();
+    }
 }
