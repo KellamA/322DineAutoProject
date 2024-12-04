@@ -6,7 +6,7 @@ Video Link: https://youtu.be/s2-X6ZMs-LQ
  * Started on front end
 
 ## Work Summary (Developer Facing)
-During Sprint 2, we started work on the front end side of our project, as well as finish work on other essential features of our project that were more difficult and time consuming, such as creating a class that analyzed data related to menu orders over a span of time, and creating a method to verify payment by having the user input a fake credit card number and checking if that number is present within a pre-existing text file with a number of fake credit card numbers already in it.
+During Sprint 2, we started work on the front end side of our project, as well as finished work on other essential features of our project that were more difficult and time consuming, such as creating a class that analyzed data related to menu orders over a span of time, and creating a method to verify payment by having the user input a fake credit card number and checking if that number is present within a pre-existing text file with a number of fake credit card numbers already in it.
 
 ## Unfinished Work
 We didn’t get to implement a revenue tracker yet because we didn’t feel that we had enough time during this sprint to create and test code for a potential revenue tracker for our project yet. We also still have to fully complete the front end side of our project because we ran into some issues that took more time to resolve than expected.
@@ -40,7 +40,7 @@ Here's what went well:
   * Using a switch to separate login for the customer, admin, and analytics was a good decision because it made our code easier to navigate
 
  Here's what we'd like to improve:
-   * Work even more on the project throughout the week instead of doing a lot of singular days
+  * Work even more on the project throughout the week instead of doing a lot of singular days
   * Start on the next sprint even earlier so we have even more time to ask questions and debug our code
   * Meet up with each other more often to make sure everyone is making appropriate progress on their part of the project
   * Make sure our parts are fully complete and working properly before the deadline of the next sprint
