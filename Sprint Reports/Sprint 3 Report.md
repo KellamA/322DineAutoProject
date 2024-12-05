@@ -14,8 +14,9 @@ We didn’t get to implement a system for the user to choose whether they want t
 Here are links to the issues that we completed in this sprint:
  * https://github.com/KellamA/322DineAutoProject/issues/10
  * https://github.com/KellamA/322DineAutoProject/issues/8
- * https://github.com/KellamA/322DineAutoProject/issues/12 
-
+ * https://github.com/KellamA/322DineAutoProject/issues/12
+ * https://github.com/KellamA/322DineAutoProject/issues/13 
+ 
  ## Incomplete Issues/User Stories
  Here are links to issues we worked on but did not complete in this sprint:
  * All issues have been completed!
